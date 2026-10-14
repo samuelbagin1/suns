@@ -16,12 +16,10 @@
 \begin{document}
 \maketitle
 
-\section*{data load and EDA}
-
-Typ údajov: str.
+\section*{Data load and EDA}
 
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{0.02\linewidth}}c@{}}
+\begin{tabular}{@{}c@{\hspace{0.01\linewidth}}c@{}}
 \includegraphics[width=0.49\linewidth,keepaspectratio]{graf_01.png} &
 \includegraphics[width=0.49\linewidth,keepaspectratio]{graf_02.png} \\[4pt]
 \includegraphics[width=0.49\linewidth,keepaspectratio]{graf_03.png} &
@@ -39,17 +37,19 @@ Typ údajov: str.
 \end{tabular}
 \end{center}
 
+Prvotná explorácia dát v datasete - rozloženie dát, početnosť v intervaloch, rozptýlenie dát.
+
 \begin{center}
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{graf_15.png}
 \end{center}
 
-V cca 2/3 (8139/12334) dát chýba hodnota (NA) v poslednom stĺpci Informational\_\allowbreak{}Duration, čo není ani vhodné dopĺňať/nahrádzať, preto tento stĺpec je jednoduchšie a lepšie dropnúť. Riadky s chýbajúcim Product\allowbreak{}Related\_\allowbreak{}Duration a Visitor\allowbreak{}Type odstraňujem pre chýbajúce hodnotu, čo predstavuje 732 riadkov.
+V cca 2/3 (8139/12333) dát chýba hodnota (NA) v poslednom stĺpci Informational\_\allowbreak{}Duration, čo není ani vhodné dopĺňať/nahrádzať, preto tento stĺpec je jednoduchšie a lepšie dropnúť. Riadky s chýbajúcim Product\allowbreak{}Related\_\allowbreak{}Duration a Visitor\allowbreak{}Type odstraňujem pre chýbajúce hodnotu, čo predstavuje 732 riadkov.
 
 \begin{center}
     \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{data_describe.png}
 \end{center}
 
-\subsubsection*{removing outliers}
+\subsubsection*{Removing outliers}
 
 \begin{center}
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{graf_16.png}
@@ -59,15 +59,15 @@ Odľahlé záznamy, počty riadkov: 11601, 11557.
 
 Hranice 5 000s a 1 000 stránok ležia v medzerách medzi ostatnými hodnotami a dvoma odľahlými skupinami. Drop duplicates odstráni úplne identické riadky, pričom návštevy s rôznymi Session\allowbreak{}ID ponechá. Vysoké Page\allowbreak{}Values a dlhé Product\allowbreak{}Related\_\allowbreak{}Duration ponechávam, lebo samotná veľkosť hodnoty nepreukazuje chybu a môže predstavovať hodnotný nákup alebo dlhú návštevu.
 
-Po vyčistení sa počet riadkov znížil z 11 601 (12 334 - 734 NA riadkov) na 11 557, kde sa odstráni 18 neplatných záznamov, 23 kladných outlierov a 3 duplicity.
+Po vyčistení sa počet riadkov znížil z 11 601 (12 333 - 732 NA riadkov) na 11 557, kde sa odstráni 18 neplatných záznamov, 23 kladných outlierov a 3 duplicity.
 
 \begin{center}
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{graf_17.png}
 \end{center}
 
-\subsection*{Visitor\allowbreak{}Type vs Product\allowbreak{}Related a Page\allowbreak{}Values}
+\subsection*{VisitorType vs ProductRelated a PageValues}
 
-Použitý log(1 + x) (log1p), kvôli normalizácii veľmi odľahlých hodnôt a obsahovaní 0 hodnôt, logaritmus 1+x zachová 0 na 0, normalizácia zachovaná aj kvôli porovnaniu rôznych skupín
+Použitý log(1 + x) (log1p), kvôli transformácii veľmi odľahlých hodnôt a obsahovaní 0 hodnôt, logaritmus 1+x zachová 0 na 0, transformácia zachovaná aj kvôli porovnaniu rôznych skupín
 
 \begin{center}
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{graf_18.png}
@@ -101,9 +101,9 @@ Boxplot sumarizuje rozdelenie mesačných podielov.
 
 Najvyšší podiel nákupov je za mesiac november, približne 25.4\% v neupravených a v upravených 26.9\% dátach. Najnižšie je za mesiac február, kde dosahuje podiel iba 1.6\% a 1.7\%.
 
-Intervaly spoľahlivosti spresňujú informáciu o presnosti odhadov, kde závisí od počtu sessions aj od podielu nákupov. Máj má užší interval ako mesiac august, ktorý obsahuje menej sessionov.
+Intervaly spoľahlivosti spresňujú in formáciu o presnosti odhadov, kde závisí od počtu sessions aj od podielu nákupov. Máj má užší interval ako mesiac august, ktorý obsahuje menej sessionov.
 
-Pri čistení boli odstránené iba sessiony bez nákupu, počet nákupov preto ostal rovnaký, zatiaľ čo sessiony klesli, čo zvýšilo podiel nákupov v upravených dátach.
+Pri čistení počet nákupov klesol z 1 909 na 1 908. Pri odstránení duplicít sa odstránil aj jeden záznam nákupu, zatiaľ čo sessiony klesli, čo zvýšilo podiel nákupov v upravených dátach.
 
 \subsubsection*{Correlation of session and purchase by month}
 
@@ -115,11 +115,11 @@ Pri čistení boli odstránené iba sessiony bez nákupu, počet nákupov preto 
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{corr_session_month.png}
 \end{center}
 
-Pearsonova korelácia r = 0.853 naznačuje silný lineárny vzťah. Spearmanova korelácia \ensuremath{\rho} = 0.976 ukazuje, že mesiace s vyššou návštevnosťou majú takmer vždy aj vyšší počet nákupov.
+Pearsonova korelácia r = 0.854 naznačuje silný lineárny vzťah. Spearmanova korelácia \ensuremath{\rho} = 0.976 ukazuje, že mesiace s vyššou návštevnosťou majú takmer vždy aj vyšší počet nákupov.
 
-Máj mal najviac sessionov 3 171 ale nákupom skončilo 365, podiel 11.5\%. November mal menej sessionov 2 826 no najviac nákupov 756, čo je aj najvyšší podiel nákupov 26.9\%. Najnižší podiel dosiahol za mesiac február a to 1.7\%.
+Máj mal najviac sessionov 3 161 ale nákupom skončilo 365, podiel 11.5\%. November mal menej sessionov 2 821 no najviac nákupov 760, čo je aj najvyšší podiel nákupov 26.9\%. Najnižší podiel dosiahol za mesiac február a to 1.7\%.
 
-\subsection*{Product\allowbreak{}Related a Exit\allowbreak{}Rates}
+\subsection*{ProductRelated a ExitRates}
 
 Hexbin graf ukazuje počet produktových stránok oproti priemernej miere odchodu zo stránok navštívených v sessions. Používam log1p, čo zachová nuly a zlepšuje čitateľnosť veľkého rozsahu. Farba vyjadruje počet sessionov v hexagóne.
 
@@ -131,9 +131,9 @@ Hexbin graf ukazuje počet produktových stránok oproti priemernej miere odchod
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{productRelated_exitRates.png}
 \end{center}
 
-S rastúcim počtom navštívených produktových stránok má priemerná miera odchodu sa znižovať. Vzťah ostáva podobný pred aj po čistení, kde to naznačuje Spearmanova korelácia, ktorá je približne -0.52. Nepreukazuje sa, že viac produktových stránok priamo spôsobuje nižšiu mieru odchodu. Medián pre Exit\allowbreak{}Rates pri 0-1 produktových stránkach je 0.2 ale 0.017 pri viac ako 50 produktových stránkach.
+S rastúcim počtom navštívených produktových stránok má priemerná miera odchodu sa znižovať. Vzťah ostáva podobný pred aj po čistení, kde to naznačuje Spearmanova korelácia, ktorá je približne -0.52. Nepreukazuje sa, že viac produktových stránok priamo spôsobuje nižšiu mieru odchodu. Medián pre ExitRates pri 0-1 produktových stránkach je 0.2 ale 0.017 pri viac ako 50 produktových stránkach.
 
-\subsection*{Correlation of Product\allowbreak{}Related and time on them}
+\subsection*{Correlation of ProductRelated and time on them}
 
 Počet session: 11557 | Pearson r = 0.861 | Spearman \ensuremath{\rho} = 0.884
 
@@ -147,7 +147,7 @@ Počet session s časom nad 30 000: 2
 \includegraphics[width=\linewidth,height=0.08\textheight,keepaspectratio]{corr_productRelated_time.png}
 \end{center}
 
-Graf ukazuje, že s rastúcim počtom navštívených produktových stránok rastie aj čas strávený na nich. Pearsonova korelácia je 0.304, čo naznačuje slabšiu lineárnu závislosť. Spearmanova korelácia 0.883 ukazuje silný vzťah, vyššiemu počtu stránok väčšinou pripadá dlhší čas, hoci tento rast nie je rovnomerný.
+Graf ukazuje, že s rastúcim počtom navštívených produktových stránok rastie aj čas strávený na nich. Pearsonova korelácia je 0.861, čo naznačuje silnú lineárnu závislosť. Spearmanova korelácia 0.884 ukazuje silný vzťah, vyššiemu počtu stránok väčšinou pripadá dlhší čas, hoci tento rast nie je rovnomerný.
 
 Graf so škálou symlog umožňuje ukázať extrémne hodnoty a lepšie odhaľuje rastúci trend. Lineárny graf ukazuje, že väčšina sessionov sa sústreďuje pri nižších počtoch stránok a kratšom čase.
 
@@ -181,7 +181,7 @@ Rozdelenie dát na trénovacie, validačné a testovacie, kde využijem aj strat
 \includegraphics[width=\linewidth,height=0.1\textheight,keepaspectratio]{encoding_categorical.png}
 \end{center}
 
-One-Hot encoder vytvorí samostatné binárne stĺpce pre každú kategóriu, čo je vhodné pre diskrétne dáta (kategorické). Nezachováva vzťah, závislosť, poradie ani vzdialenosť od ostatných kategórií - mali by byť nezávislé, ale nezaručuje sa to. handle unknown umožní spracovať aj kategóriu, ktorá sa v tréningu nevyskytla a imputer doplní prípadne chýbajúce hodnoty najčastejšou kategóriou, ktorá sa vyskytla v tréningu.
+One-Hot encoder vytvorí samostatné binárne stĺpce pre každú kategóriu, čo je vhodné pre diskrétne dáta (kategorické). Nezachováva vzťah, závislosť, poradie ani vzdialenosť od ostatných kategórií - mali by byť nezávislé, ale nezaručuje sa to. handle unknown umožní spracovať aj kategóriu, ktorá sa v tréningu nevyskytla a imputer doplní prípadne chýbajúce hodnoty najčastejšou kategóriou, ktorá sa vyskytla v tréningu. Po využití encodera máme na vstupe 72 stĺpcov.
 
 \subsection*{Scaling}
 
@@ -194,7 +194,7 @@ Všetko je organizované v Pipeline, aby sa kódovanie, škálovanie, imputácia
 \begin{itemize}
     \item Random Forest: 64 kombinácií - hľadajú sa kombinácie hyperparametrov, kde max features je v rozmedzí 4 až 13, najmenej listov je v rozmedzí 1 až 7 a najväčšia hĺbka od 5 do 20.
     \item Logistic Regression: 12 kombinácií - regularizácia C od silnej 0,00001 až po slabú 1. Pri class\_weight skúša None, kde majú všetky vzorky rovnakú váhu a balanced, kde má zvýšenú váhu menej početná trieda. (sigmoid, probability, weighted sum, Maximum Likelihood Estimation)
-    \item Decision Tree: 10 kombinácií - skúša maximálnu hĺbku od 3 až po 15 ale taktiež None, a minimálny počet listov 1 alebo 5.
+    \item Decision Tree: 10 kombinácií - skúša maximálnu hĺbku od 3 až po 15 ale taktiež None, a minimálny počet vzoriek v liste 1 alebo 5.
 \end{itemize}
 
 \begin{center}
@@ -211,8 +211,11 @@ Tabuľka má 12 riadkov s rôznymi kombináciami experimentovania. Vyhodnocujú 
 \begin{center}
 \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{overall_mlfit.png}
 \end{center}
+{\fontsize{9pt}{11pt}\selectfont\ttfamily
+Balanced accuracy = (recall nákupov + recall návštev bez nákupu) / 2
+}
 
-Najlepším modelom podľa validácie bol Random Forest pri rozdelení 70/10/20, s validačnou accuracy 91.18\% a testovacou accuracy 89.66\%. Najvyššiu testovaciu accuracy dosiahol Random Forest pri 60/10/30 a to 89.71\% čo je rozdiel 0.05\%.
+Najlepším modelom podľa validácie bol Random Forest pri rozdelení 70/10/20, s validačnou accuracy 91.18\% a testovacou accuracy 89.66\%. Najvyššiu testovaciu accuracy dosiahol Random Forest pri 60/10/30 a to 89.71\% čo je rozdiel 0.05.
 
 Najhorším modelom podľa validácie bola Logistic Regression pri 60/10/30, s validačnou accuracy 87.2\% a testovacou 87.6\%. Zachytila iba 36.3\% správne klasifikovaných nákupov.
 
@@ -236,10 +239,11 @@ Najhorším modelom podľa validácie bola Logistic Regression pri 60/10/30, s v
 
 Najlepšia konfigurácia Random Forestu mal maximálna hĺbka 10, počet zvažovaných vlastností 13 a minimálny počet vzoriek v liste 1. Jedna z najhorších mala maximálna hĺbka 5, počet zvažovaných vlastností 4 a minimálny počet vzoriek v liste 1, s validačnou accuracy 83.48\%. Takéto parametre vytvárajú plytké stromy, čo má za príčinu nedostatočné zachytávanie vzťahov v dátach.
 
-Najväčší rozdiel medzi tréningom a testom mal Random Forest pri 80/10/10, kde trénovacia accuracy bola 96.62\% a testovacia 88.67\%, teda rozdiel 6.95. Pri 60/10/30 bol rozdiel iba 3.88. Výsledky z rozdelenia 80/10/10 naznačujú pretrénovanie.
+Najväčší rozdiel medzi tréningom a testom mal Random Forest pri 80/10/10, kde trénovacia accuracy bola 95.62\% a testovacia 88.67\%, teda rozdiel 6.95. Pri 60/10/30 bol rozdiel iba 3.88. Výsledky z rozdelenia 80/10/10 naznačujú pretrénovanie.
 
-Vybraný Random Forest správne rozpoznal 213 nákupov, ale 169 nákupov prehliadol pri testovaní. Precision bola 75.27\% (213/283) a recall 55.76\% (213/382) a F1 61.04\%.
+Vybraný Random Forest správne rozpoznal 213 nákupov, ale 169 nákupov prehliadol pri testovaní. Precision bola 75.27\% (213/283) a recall 55.76\% (213/382) a F1 64.06\%.
 
+Najdôležitejšou vlastnosťou je PageValues s relatívnou dôležitosťou 52,04\%. Nasledovali ExitRates (6,61 \%), ProductRelated\_Duration (6,49 \%), ProductRelated (4,98 \%) a BounceRates (4,78 \%), takže model pri predikcii nákupu využíval najmä hodnotu navštívených stránok, správanie pri odchode a aktivitu na produktových stránkach.
 
 
 \subsubsection*{Logistic Regression}
@@ -258,8 +262,11 @@ Vybraný Random Forest správne rozpoznal 213 nákupov, ale 169 nákupov prehlia
 }
 \end{center}
 
+Najlepšia konfigurácia mala regularizačný parameter C = 0,1 a nastavenie class\_weight = None, s validačnou accuracy 87,98 \%. Najhoršia konfigurácia mala C = 0,00001 a class\_weight = balanced, s validačnou accuracy 81,14 \%. Veľmi nízka hodnota C znamená silnú regularizáciu, ktorá obmedzuje koeficienty modelu a môže viesť k nedostatočnému zachyteniu vzťahov v dátach. 
 
+Najväčší rozdiel medzi tréningom a testom mala logistická regresia pri rozdelení 60/10/30, kde trénovacia accuracy bola 87,98 \% a testovacia 87,60 \%, teda rozdiel 0,38 percentuálneho bodu. Pri rozdelení 80/10/10 bol rozdiel iba 0,12 percentuálneho bodu.
 
+Vybraná logistická regresia pri rozdelení 80/10/10 správne rozpoznala 69 nákupov, ale 122 nákupov prehliadla pri testovaní. Precision bola 78,41 \% (69/88), recall 36,13 \% (69/191) a F1 skóre 49,46 \%. Model mal pomerne vysokú precision, ale zachytil iba približne tretinu skutočných nákupov.
 
 \subsubsection*{Decision Tree}
 
@@ -278,10 +285,12 @@ Vybraný Random Forest správne rozpoznal 213 nákupov, ale 169 nákupov prehlia
 \end{center}
 
 
+Najlepšia konfigurácia mala maximálnu hĺbku 3 a minimálny počet vzoriek v liste 1, s validačnou accuracy 90,14 \%. Rovnaký výsledok dosiahla aj konfigurácia s hĺbkou 3 a minimálnym počtom vzoriek v liste 5. Najhoršia konfigurácia nemala obmedzenú maximálnu hĺbku a mala minimálny počet vzoriek v liste 5, s validačnou accuracy 85,64 \%. Hlbšie stromy dosahovali vyššiu trénovaciu úspešnosť, ale nižšiu validačnú úspešnosť, čo naznačuje pretrénovanie. 
 
+Najväčší rozdiel medzi tréningom a testom bolo pri rozdelení 70/15/15, kde trénovacia accuracy bola 91,19 \% a testovacia 87,95 \%, teda rozdiel 3,24 percentuálneho bodu.
 
+Vybraný decision tree pri rozdelení 70/10/20 správne rozpoznal 219 nákupov, ale 163 nákupov prehliadol pri testovaní. Precision bola 68,22 \% (219/321), recall 57,33 \% (219/382) a F1 skóre 62,30 \%. V porovnaní s vybranou logistickou regresiou zachytil vyšší podiel skutočných nákupov, ale väčší podiel jeho predikovaných nákupov bol nesprávny.
 
-Pri rovnakom rozdelení 70/10/20 prekonal Random Forest logistickú regresiu v accuracy o 2.03 ale recall až o 20.42.
 
 \section*{Neural Network}
 
@@ -293,13 +302,19 @@ Pri rovnakom rozdelení 70/10/20 prekonal Random Forest logistickú regresiu v a
 \end{itemize}
 
 
-\subsection*{net, Early\allowbreak{}Stopping a vyhodnotenie}
+\subsection*{Architektúra}
 
-Používam plne prepojenú sieť s ReLU aktivačnou funckiou v skrytých vrstvách. Výstupný neurón vracia logit. BCEWith-Logits-Loss spája sigmoid a binárnu krížovú entropiu stabilne. Pri predikcii používam sigmoid a pevný prah 0.5. Adam aktualizuje váhy po minibatchoch. Všetky behy používajú rovnaký seed, batch size s 128 a maximálne 300 epoch. Dropout ani penalizáciu nepoužívam.
+Používam plne prepojenú sieť s ReLU aktivačnou funckiou v skrytých vrstvách, ktorá pridáva nelinearitu. Výstupný neurón vracia logit. BCEWith-Logits-Loss spája sigmoid a binárnu krížovú entropiu, čo je vhodné pre binárnu klasifikáciu a výrazne penalizuje nesprávne predikcie. Pri predikcii používam sigmoid a pevný prah 0.5. 
+
+Ako solver používam Adam, ktorý využíva pohyblivé priemery gradientov a ich druhých mocnín, podľa ktorých aktualizuje váhy po minibatchoch. Všetky behy používajú rovnaký seed, batch size s 128 a maximálne 300 epoch.
 
 Early-Stopping sleduje validačnú stratu. Ak počas 20 epoch nepríde zlepšenie väčšie než 0.0001 oproti poslednému významnému minimu, zastaví tréning. Obnoví váhy z absolútne najnižšej validačnej straty. Pri modeli bez Early-Stoppingu hodnotím posledné váhy, aby sa pretrénovanie neskrylo obnovením skoršej epochy.
 
 \subsection*{Kombinácie trénovania}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{nn_config.png}
+\end{center}
 
 O demonštruje pretrénovanie veľkej siete s vrstvami 256, 128 a 64 neurónov pri learning rate 0.001 počas 300 epoch. ES opakuje rovnakú konfiguráciu ale pridáva Early\allowbreak{}Stopping.
 
@@ -313,7 +328,7 @@ E1-E3 menia learning rate pri rovnakých vrstvách 64 a 32 neurónov. E4 a E5 me
 \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{nn_table.png}
 \end{center}
 
-Neurónovú sieť som trénoval na rozdelení 70 \% tréningových, 15 \% validačných a 15 \% testovacích dát. Všetkých sedem tréningov používalo rovnaké vzorky a predspracovanie naučené iba na tréningovej množine. Výsledky sú preto medzi jednotlivými konfiguráciami porovnateľné. Validáciu som použil na Early\allowbreak{}Stopping a výber konfigurácie, testovacie dáta na záverečné vyhodnotenie.
+Neurónovú sieť som trénoval na rozdelení 70 \% tréningových, 15 \% validačných a 15 \% testovacích dát. Všetkých sedem tréningov používalo rovnaké vzorky a predspracovanie naučené iba na tréningovej množine. Výsledky sú preto medzi jednotlivými konfiguráciami porovnateľné. Validáciu som použil na EarlyStopping a výber konfigurácie, testovacie dáta na záverečné vyhodnotenie.
 
 
 \subsubsection*{Pretrénovanie (veľká sieť bez EarlyStoppingu)}
@@ -332,7 +347,7 @@ Neurónovú sieť som trénoval na rozdelení 70 \% tréningových, 15 \% valida
 }
 \end{center}
 
-Pri veľkej sieti bez EarlyStoppingu sa jasne prejavilo pretrénovanie. Tréningová strata postupne klesala takmer k nule a tréningová accuracy dosiahla 99,98 \%. Validačná strata však po minime v 6. epoche začala rásť. Sieť sa teda stále lepšie prispôsobovala tréningovým príkladom, ale jej schopnosť pracovať s nevidenými dátami sa zhoršovala. Potvrdila to testovacia accuracy 86,85 \%, ktorá bola oproti tréningovej nižšia o 13,12 percentuálneho bodu. Tréningová konfúzna matica mala takmer všetky predikcie na diagonále, zatiaľ čo testovacia obsahovala podstatne viac nesprávnych predikcií (FP a FN).
+Pri veľkej sieti bez EarlyStoppingu sa jasne prejavilo pretrénovanie. Tréningová strata postupne klesala takmer k nule a tréningová accuracy dosiahla 99,98 \%. Validačná strata však po minime v 6. epoche začala rásť. Sieť sa teda stále lepšie prispôsobovala tréningovým príkladom, ale jej schopnosť pracovať s nevidenými dátami sa zhoršovala. Potvrdila to testovacia accuracy 86,85 \%, ktorá bola oproti tréningovej nižšia o 13,12 percentuálneho bodu. Tréningová konfúzna matica mala takmer všetky predikcie na diagonále, zatiaľ čo testovacia obsahovala podstatne viac nesprávnych predikcií (FP a FN). Validačná accuracy sa počas veľkej časti tréningu výrazne nemenila, hoci validačná strata aj MSE rástli
 
 
 \subsubsection*{Veľká sieť s EarlyStoppingom}
@@ -351,7 +366,7 @@ Pri veľkej sieti bez EarlyStoppingu sa jasne prejavilo pretrénovanie. Tréning
 }
 \end{center}
 
-EarlyStopping výrazne obmedzil pretrénovanie. Pri rovnakej architektúre zastavil tréning po 26 epochách a obnovil váhy zo 6. epochy, v ktorej bola validačná strata najnižšia. Tréningová accuracy klesla na 90,52 \%, ale testovacia sa zvýšila na 88,87 \%. Rozdiel medzi nimi sa zmenšil na 1,65 percentuálneho bodu. Zlepšila sa aj testovacia balanced accuracy a F1 skóre. Nižšia tréningová úspešnosť teda predstavovala prijateľný kompromis za lepšiu generalizáciu. Graf stále zobrazuje zhoršovanie počas ďalších epoch čakania, no výsledné metriky a konfúzne matice patria obnoveným váham zo 6. epochy.
+EarlyStopping výrazne obmedzil pretrénovanie. Pri rovnakej architektúre zastavil tréning po 26 epochách a obnovil váhy zo 6. epochy, v ktorej bola validačná strata najnižšia. Tréningová accuracy klesla na 90,52 \%, ale testovacia sa zvýšila na 88,87 \%. Rozdiel medzi nimi sa zmenšil na 1,65 percentuálneho bodu. Zlepšila sa aj testovacia balanced accuracy a F1 skóre. Počet prehliadnutých nákupov klesol zo 130 na 100 a počet nesprávne predikovaných nákupov z 98 na 93. Nižšia tréningová úspešnosť teda predstavovala prijateľný kompromis za lepšiu generalizáciu. Graf stále zobrazuje zhoršovanie počas ďalších epoch čakania, no výsledné metriky a konfúzne matice patria obnoveným váham zo 6. epochy.
 
 
 \subsubsection*{Najlepší experiment}
@@ -370,9 +385,11 @@ EarlyStopping výrazne obmedzil pretrénovanie. Pri rovnakej architektúre zasta
 }
 \end{center}
 
-V experimentoch E1-E5 som menil rýchlosť učenia a architektúru siete. Podľa validačnej accuracy bol najlepší E2, ktorý používal skryté vrstvy so 64 a 32 neurónmi a learning rate 0,001. Dosiahol tréningovú accuracy 90,73 \%, validačnú 89,56 \% a testovaciu 89,04 \%. E1 dosiahol rovnakú testovaciu accuracy, ale potreboval 149 epoch oproti 34 pri E2. Vyšší learning rate v E3 skrátil tréning, no nepriniesol lepšiu testovaciu úspešnosť. Ani zmena veľkosti siete nezaručila zlepšenie, preto väčšia kapacita sama osebe nie je dôvodom na výber modelu.
+V experimentoch E1-E5 som menil rýchlosť učenia a architektúru siete. Podľa validačnej accuracy bol najlepší E2, ktorý používal 64 a 32 neurónov v skrytej vrstve a learning rate 0,001. Dosiahol tréningovú accuracy 90,73 \%, validačnú 89,56 \% a testovaciu 89,04 \%. E1 dosiahol rovnakú testovaciu accuracy, ale potreboval 149 epoch oproti 34 pri E2. Vyšší learning rate v E3 skrátil tréning, no nepriniesol lepšiu testovaciu úspešnosť. Ani zmena veľkosti siete nezaručila zlepšenie, preto väčšia kapacita sama osebe nie je dôvodom na výber modelu.
 
-Konfúzna matica E2 ukazuje, že sieť správne rozpoznáva obe triedy, ale úspešnejšia je pri návštevách bez nákupu. Na teste správne označila 1 372 návštev bez nákupu a 172 nákupov. Zároveň nesprávne predikovala nákup pri 76 návštevách a nezachytila 114 skutočných nákupov. Zachytila teda približne 60,14 \% nákupov. Výrazná diagonála potvrdzuje užitočnosť modelu, ale accuracy blízka 90 \% neznamená, že sieť rozpoznáva takmer všetky nákupy.
+Najväčšie zlepšenie nastalo v prvých epochách, keď tréningová aj validačná strata rýchlo klesali. K minimu validačnej straty došlo v 14. epoche, kde následne tréningová strata ďalej klesala, ale validačná už kolísala a ku koncu vzrástla.
+
+Konfúzna matica E2 ukazuje, že sieť správne rozpoznáva obe triedy, ale úspešnejšia je pri návštevách bez nákupu. Na teste správne označila 1 372 návštev bez nákupu a 172 nákupov. Zároveň nesprávne predikovala nákup pri 76 návštevách a nezachytila 114 skutočných nákupov (FN). Zachytila teda približne 60,14 \% nákupov (R). 
 
 
 \subsubsection*{Najhorší experiment}
@@ -391,8 +408,12 @@ Konfúzna matica E2 ukazuje, že sieť správne rozpoznáva obe triedy, ale úsp
 }
 \end{center}
 
-Podľa validačnej accuracy bol najhorší E5, jeho výsledky však ukazujú význam sledovania viacerých metrík. Mal nižšiu testovaciu accuracy než E2, ale vyššiu balanced accuracy aj F1 nákupov. Označenie „najhorší“ preto platí iba pre zvolené validačné kritérium.
+Podľa validačnej accuracy bol najhorší experiment E5. Mal nižšiu testovaciu accuracy než E2, ale vyššiu balanced accuracy aj F1 nákupov. Sieť mala úspešnosť s testovacou accuracy 88.7 \%.
 
-Prekonala väčšinový baseline s testovacou accuracy 83,51 \% a vykazovala podstatne menší rozdiel medzi tréningom a testom než zámerne pretrénovaná sieť. Výsledky podporujú použitie EarlyStopping a ukazujú, že vhodná kombinácia architektúry a rýchlosti učenia je dôležitejšia než samotné zväčšovanie siete. Rozdiely medzi experimentmi sú však malé a pochádzajú z jediného rozdelenia a seedu, preto ich nemožno považovať za dôkaz všeobecnej nadradenosti jednej konfigurácie.
+E5 používal tri skryté vrstvy so 128, 64 a 32 neurónmi. Validačná strata dosiahla minimum v 8. epoche a následne spolu s validačným MSE rástla, zatiaľ čo tréningové chyby ďalej klesali, čo naznačuje začínajúce pretrénovanie. Tréning sa zastavil po 28 epochách a obnovili sa váhy z 8. epochy.
+
+E5 zachytil 194 nákupov oproti 172 pri E2, ale zároveň nesprávne predikoval nákup pri 104 návštevách oproti 76. Vyšší recall tak dosiahol za cenu väčšieho počtu FP.
+
+Výsledky podporujú použitie EarlyStopping a ukazujú, že vhodná kombinácia architektúry a rýchlosti učenia je dôležitejšia než samotné zväčšovanie siete.
 
 \end{document}
