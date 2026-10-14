@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.13)  13 OCT 2026 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.13)  14 OCT 2026 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,28 +439,104 @@ Package pdftex.def Info: obrazky/decisiontree_confusion.png  used on input line 
 
 
 [12 <./obrazky/logistiregression_table.png> <./obrazky/logisticregression_detail.png> <./obrazky/logistiregression_confusion.png> <./obrazky/decisiontree_table.png>]
+<obrazky/nn_table.png, id=129, 1328.965pt x 526.96875pt>
+File: obrazky/nn_table.png Graphic file (type png)
+<use obrazky/nn_table.png>
+Package pdftex.def Info: obrazky/nn_table.png  used on input line 313.
+(pdftex.def)             Requested size: 455.24889pt x 180.51787pt.
+
 
 [13 <./obrazky/decisiontree_detail.png> <./obrazky/decisiontree_confusion.png>]
+<obrazky/E0_1.png, id=136, 1335.99126pt x 567.11874pt>
+File: obrazky/E0_1.png Graphic file (type png)
+<use obrazky/E0_1.png>
+Package pdftex.def Info: obrazky/E0_1.png  used on input line 322.
+(pdftex.def)             Requested size: 455.2503pt x 193.25049pt.
+<obrazky/E0_2.png, id=137, 1015.795pt x 424.58624pt>
+File: obrazky/E0_2.png Graphic file (type png)
+<use obrazky/E0_2.png>
+Package pdftex.def Info: obrazky/E0_2.png  used on input line 332.
+(pdftex.def)             Requested size: 345.35829pt x 144.35092pt.
+<obrazky/E0_3.png, id=138, 401.5pt x 420.57124pt>
+File: obrazky/E0_3.png Graphic file (type png)
+<use obrazky/E0_3.png>
+Package pdftex.def Info: obrazky/E0_3.png  used on input line 332.
+(pdftex.def)             Requested size: 152.36714pt x 159.60695pt.
 
-[14] (./dokumentacia.aux)
+
+[14 <./obrazky/nn_table.png> <./obrazky/E0_1.png> <./obrazky/E0_2.png> <./obrazky/E0_3.png>]
+<obrazky/ES_1.png, id=146, 1332.98pt x 575.14874pt>
+File: obrazky/ES_1.png Graphic file (type png)
+<use obrazky/ES_1.png>
+Package pdftex.def Info: obrazky/ES_1.png  used on input line 341.
+(pdftex.def)             Requested size: 455.24117pt x 196.42558pt.
+<obrazky/ES_2.png, id=147, 1005.7575pt x 429.605pt>
+File: obrazky/ES_2.png Graphic file (type png)
+<use obrazky/ES_2.png>
+Package pdftex.def Info: obrazky/ES_2.png  used on input line 351.
+(pdftex.def)             Requested size: 345.35829pt x 147.51903pt.
+<obrazky/ES_3.png, id=148, 382.42876pt x 420.57124pt>
+File: obrazky/ES_3.png Graphic file (type png)
+<use obrazky/ES_3.png>
+Package pdftex.def Info: obrazky/ES_3.png  used on input line 351.
+(pdftex.def)             Requested size: 152.36714pt x 167.56453pt.
+<obrazky/E2_1.png, id=149, 1344.02126pt x 576.1525pt>
+File: obrazky/E2_1.png Graphic file (type png)
+<use obrazky/E2_1.png>
+Package pdftex.def Info: obrazky/E2_1.png  used on input line 360.
+(pdftex.def)             Requested size: 455.23851pt x 195.15077pt.
+
+
+[15 <./obrazky/ES_1.png> <./obrazky/ES_2.png> <./obrazky/ES_3.png>]
+<obrazky/E2_2.png, id=156, 998.73125pt x 412.54124pt>
+File: obrazky/E2_2.png Graphic file (type png)
+<use obrazky/E2_2.png>
+Package pdftex.def Info: obrazky/E2_2.png  used on input line 370.
+(pdftex.def)             Requested size: 345.35829pt x 142.6542pt.
+<obrazky/E2_3.png, id=157, 399.4925pt x 417.56pt>
+File: obrazky/E2_3.png Graphic file (type png)
+<use obrazky/E2_3.png>
+Package pdftex.def Info: obrazky/E2_3.png  used on input line 370.
+(pdftex.def)             Requested size: 152.36714pt x 159.2606pt.
+<obrazky/E5_1.png, id=158, 1340.00626pt x 574.145pt>
+File: obrazky/E5_1.png Graphic file (type png)
+<use obrazky/E5_1.png>
+Package pdftex.def Info: obrazky/E5_1.png  used on input line 381.
+(pdftex.def)             Requested size: 455.22806pt x 195.04903pt.
+
+
+[16 <./obrazky/E2_1.png> <./obrazky/E2_2.png> <./obrazky/E2_3.png>]
+<obrazky/E5_2.png, id=165, 1001.7425pt x 422.57875pt>
+File: obrazky/E5_2.png Graphic file (type png)
+<use obrazky/E5_2.png>
+Package pdftex.def Info: obrazky/E5_2.png  used on input line 391.
+(pdftex.def)             Requested size: 345.35829pt x 145.68665pt.
+<obrazky/E5_3.png, id=166, 375.4025pt x 415.5525pt>
+File: obrazky/E5_3.png Graphic file (type png)
+<use obrazky/E5_3.png>
+Package pdftex.def Info: obrazky/E5_3.png  used on input line 391.
+(pdftex.def)             Requested size: 152.36714pt x 168.6656pt.
+
+
+[17 <./obrazky/E5_1.png> <./obrazky/E5_2.png> <./obrazky/E5_3.png>] (./dokumentacia.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3926 strings out of 473190
- 68239 string characters out of 5715800
- 469709 words of memory out of 5000000
- 27166 multiletter control sequences out of 15000+600000
+ 4043 strings out of 473190
+ 70719 string characters out of 5715800
+ 467709 words of memory out of 5000000
+ 27283 multiletter control sequences out of 15000+600000
  568233 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,758b,270s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,743b,270s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on dokumentacia.pdf (14 pages, 4139090 bytes).
+Output written on dokumentacia.pdf (17 pages, 6502167 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 208 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

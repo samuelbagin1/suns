@@ -307,21 +307,92 @@ E1-E3 menia learning rate pri rovnakých vrstvách 64 a 32 neurónov. E4 a E5 me
 
 
 
-\subsection*{vyhodnotenie výsledkov a experimentov}
+\subsection*{Vyhodnotenie výsledkov a experimentov}
 
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{nn_table.png}
+\end{center}
 
 Neurónovú sieť som trénoval na rozdelení 70 \% tréningových, 15 \% validačných a 15 \% testovacích dát. Všetkých sedem tréningov používalo rovnaké vzorky a predspracovanie naučené iba na tréningovej množine. Výsledky sú preto medzi jednotlivými konfiguráciami porovnateľné. Validáciu som použil na Early\allowbreak{}Stopping a výber konfigurácie, testovacie dáta na záverečné vyhodnotenie.
 
-Pri veľkej sieti bez Early\allowbreak{}Stopping sa jasne prejavilo pretrénovanie. Tréningová strata postupne klesala takmer k nule a tréningová accuracy dosiahla 99,98 \%. Validačná strata však po minime v 6. epoche začala rásť. Sieť sa teda stále lepšie prispôsobovala tréningovým príkladom, ale jej schopnosť pracovať s nevidenými dátami sa zhoršovala. Potvrdila to testovacia accuracy 86,85 \%, ktorá bola oproti tréningovej nižšia o 13,12 percentuálneho bodu. Tréningová konfúzna matica mala takmer všetky predikcie na diagonále, zatiaľ čo testovacia obsahovala podstatne viac nesprávnych predikcií.
 
-Early\allowbreak{}Stopping výrazne obmedzil pretrénovanie. Pri rovnakej architektúre zastavil tréning po 26 epochách a obnovil váhy zo 6. epochy, v ktorej bola validačná strata najnižšia. Tréningová accuracy klesla na 90,52 \%, ale testovacia sa zvýšila na 88,87 \%. Rozdiel medzi nimi sa zmenšil na 1,65 percentuálneho bodu. Zlepšila sa aj testovacia balanced accuracy a F1 nákupov. Nižšia tréningová úspešnosť teda predstavovala prijateľný kompromis za lepšiu generalizáciu. Graf stále zobrazuje zhoršovanie počas ďalších epoch čakania, no výsledné metriky a konfúzne matice patria obnoveným váham zo 6. epochy.
+\subsubsection*{Pretrénovanie (veľká sieť bez EarlyStoppingu)}
 
-V experimentoch E1–E5 som menil rýchlosť učenia a architektúru siete. Podľa validačnej accuracy bol najlepší E2, ktorý používal skryté vrstvy so 64 a 32 neurónmi a learning rate 0,001. Dosiahol tréningovú accuracy 90,73 \%, validačnú 89,56 \% a testovaciu 89,04 \%. E1 dosiahol rovnakú testovaciu accuracy, ale potreboval 149 epoch oproti 34 pri E2. Vyšší learning rate v E3 skrátil tréning, no nepriniesol lepšiu testovaciu úspešnosť. Ani zmena veľkosti siete nezaručila zlepšenie, preto väčšia kapacita sama osebe nie je dôvodom na výber modelu.
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{E0_1.png}
+\end{center}
+
+\begin{center}
+\makebox[\linewidth][c]{%
+  \begin{minipage}{0.85\paperwidth}
+    \includegraphics[width=0.68\linewidth]{E0_2.png}%
+    \hfill
+    \includegraphics[width=0.30\linewidth]{E0_3.png}%
+  \end{minipage}%
+}
+\end{center}
+
+Pri veľkej sieti bez EarlyStoppingu sa jasne prejavilo pretrénovanie. Tréningová strata postupne klesala takmer k nule a tréningová accuracy dosiahla 99,98 \%. Validačná strata však po minime v 6. epoche začala rásť. Sieť sa teda stále lepšie prispôsobovala tréningovým príkladom, ale jej schopnosť pracovať s nevidenými dátami sa zhoršovala. Potvrdila to testovacia accuracy 86,85 \%, ktorá bola oproti tréningovej nižšia o 13,12 percentuálneho bodu. Tréningová konfúzna matica mala takmer všetky predikcie na diagonále, zatiaľ čo testovacia obsahovala podstatne viac nesprávnych predikcií (FP a FN).
+
+
+\subsubsection*{Veľká sieť s EarlyStoppingom}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{ES_1.png}
+\end{center}
+
+\begin{center}
+\makebox[\linewidth][c]{%
+  \begin{minipage}{0.85\paperwidth}
+    \includegraphics[width=0.68\linewidth]{ES_2.png}%
+    \hfill
+    \includegraphics[width=0.30\linewidth]{ES_3.png}%
+  \end{minipage}%
+}
+\end{center}
+
+EarlyStopping výrazne obmedzil pretrénovanie. Pri rovnakej architektúre zastavil tréning po 26 epochách a obnovil váhy zo 6. epochy, v ktorej bola validačná strata najnižšia. Tréningová accuracy klesla na 90,52 \%, ale testovacia sa zvýšila na 88,87 \%. Rozdiel medzi nimi sa zmenšil na 1,65 percentuálneho bodu. Zlepšila sa aj testovacia balanced accuracy a F1 skóre. Nižšia tréningová úspešnosť teda predstavovala prijateľný kompromis za lepšiu generalizáciu. Graf stále zobrazuje zhoršovanie počas ďalších epoch čakania, no výsledné metriky a konfúzne matice patria obnoveným váham zo 6. epochy.
+
+
+\subsubsection*{Najlepší experiment}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{E2_1.png}
+\end{center}
+
+\begin{center}
+\makebox[\linewidth][c]{%
+  \begin{minipage}{0.85\paperwidth}
+    \includegraphics[width=0.68\linewidth]{E2_2.png}%
+    \hfill
+    \includegraphics[width=0.30\linewidth]{E2_3.png}%
+  \end{minipage}%
+}
+\end{center}
+
+V experimentoch E1-E5 som menil rýchlosť učenia a architektúru siete. Podľa validačnej accuracy bol najlepší E2, ktorý používal skryté vrstvy so 64 a 32 neurónmi a learning rate 0,001. Dosiahol tréningovú accuracy 90,73 \%, validačnú 89,56 \% a testovaciu 89,04 \%. E1 dosiahol rovnakú testovaciu accuracy, ale potreboval 149 epoch oproti 34 pri E2. Vyšší learning rate v E3 skrátil tréning, no nepriniesol lepšiu testovaciu úspešnosť. Ani zmena veľkosti siete nezaručila zlepšenie, preto väčšia kapacita sama osebe nie je dôvodom na výber modelu.
 
 Konfúzna matica E2 ukazuje, že sieť správne rozpoznáva obe triedy, ale úspešnejšia je pri návštevách bez nákupu. Na teste správne označila 1 372 návštev bez nákupu a 172 nákupov. Zároveň nesprávne predikovala nákup pri 76 návštevách a nezachytila 114 skutočných nákupov. Zachytila teda približne 60,14 \% nákupov. Výrazná diagonála potvrdzuje užitočnosť modelu, ale accuracy blízka 90 \% neznamená, že sieť rozpoznáva takmer všetky nákupy.
 
-Podľa validačnej accuracy bol najhorší E5, jeho výsledky však ukazujú význam sledovania viacerých metrík. Mal nižšiu testovaciu accuracy než E2, ale vyššiu balanced accuracy aj F1 nákupov. Označenie „najhorší“ preto platí iba pre zvolené validačné kritérium. Ak by hlavným cieľom bolo zachytiť viac nákupov, bolo by vhodné vopred zvoliť tomu zodpovedajúcu validačnú metriku.
 
-Za výslednú konfiguráciu pri použitom kritériu považujem E2. Prekonala väčšinový baseline s testovacou accuracy 83,51 \% a vykazovala podstatne menší rozdiel medzi tréningom a testom než zámerne pretrénovaná sieť. Výsledky podporujú použitie Early\allowbreak{}Stopping a ukazujú, že vhodná kombinácia architektúry a rýchlosti učenia je dôležitejšia než samotné zväčšovanie siete. Rozdiely medzi experimentmi sú však malé a pochádzajú z jediného rozdelenia a seedu, preto ich nemožno považovať za dôkaz všeobecnej nadradenosti jednej konfigurácie.
+\subsubsection*{Najhorší experiment}
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{E5_1.png}
+\end{center}
+
+\begin{center}
+\makebox[\linewidth][c]{%
+  \begin{minipage}{0.85\paperwidth}
+    \includegraphics[width=0.68\linewidth]{E5_2.png}%
+    \hfill
+    \includegraphics[width=0.30\linewidth]{E5_3.png}%
+  \end{minipage}%
+}
+\end{center}
+
+Podľa validačnej accuracy bol najhorší E5, jeho výsledky však ukazujú význam sledovania viacerých metrík. Mal nižšiu testovaciu accuracy než E2, ale vyššiu balanced accuracy aj F1 nákupov. Označenie „najhorší“ preto platí iba pre zvolené validačné kritérium.
+
+Prekonala väčšinový baseline s testovacou accuracy 83,51 \% a vykazovala podstatne menší rozdiel medzi tréningom a testom než zámerne pretrénovaná sieť. Výsledky podporujú použitie EarlyStopping a ukazujú, že vhodná kombinácia architektúry a rýchlosti učenia je dôležitejšia než samotné zväčšovanie siete. Rozdiely medzi experimentmi sú však malé a pochádzajú z jediného rozdelenia a seedu, preto ich nemožno považovať za dôkaz všeobecnej nadradenosti jednej konfigurácie.
 
 \end{document}
