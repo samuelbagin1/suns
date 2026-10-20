@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1792013701.15107 "/Users/samuelbagin/Desktop/prac-plocha/school/SUNS/zadania/01/doc/dokumentacia.tex" "dokumentacia.pdf" "dokumentacia" 1792013707.93766 0
-  "/Users/samuelbagin/Desktop/prac-plocha/school/SUNS/zadania/01/doc/dokumentacia.tex" 1792013700.89393 25400 71efa1a3eca1c5916cf152d1689d1f28 ""
+["pdflatex"] 1792067475.6543 "/Users/samuelbagin/Desktop/prac-plocha/school/SUNS/zadania/01/doc/dokumentacia.tex" "dokumentacia.pdf" "dokumentacia" 1792067482.38263 0
+  "/Users/samuelbagin/Desktop/prac-plocha/school/SUNS/zadania/01/doc/dokumentacia.tex" 1792067475.44351 25475 358e0fa997ab586b9316d5fcbca8c676 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -62,8 +62,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1768343161 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1768343081 3345732 b6f22341a2bcbec3a023b9d12771ea2e ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "dokumentacia.aux" 1792013707.83906 230 cf924722629a1d1a34928388f2715d8b "pdflatex"
-  "dokumentacia.tex" 1792013700.89393 25400 71efa1a3eca1c5916cf152d1689d1f28 ""
+  "dokumentacia.aux" 1792067482.28913 230 cf924722629a1d1a34928388f2715d8b "pdflatex"
+  "dokumentacia.tex" 1792067475.44351 25475 358e0fa997ab586b9316d5fcbca8c676 ""
   "obrazky/E0_1.png" 1791976024.7624 591799 027f5273f9280473239ef17654dace72 ""
   "obrazky/E0_2.png" 1791976059.60341 187484 916e36ae155288d4f61f2804b31dc39d ""
   "obrazky/E0_3.png" 1791976081.43382 118951 37d52e85ca8d4ae282d772e03032fc00 ""

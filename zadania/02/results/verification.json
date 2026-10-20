@@ -1,0 +1,134 @@
+{
+  "checks": {
+    "all_cells_executed": true,
+    "no_error_outputs": true,
+    "syntax_valid": true,
+    "heading_hierarchy": true,
+    "no_latex_delimiters": true,
+    "figures_embedded": true,
+    "computed_natural_language_interpretations": true,
+    "cleaning_counts_match_data": true,
+    "split_counts_match_data": true,
+    "no_duplicate_identifiers_across_splits": true,
+    "outliers_removed_on_training_inputs": true,
+    "target_not_filtered_by_iqr": true,
+    "fold_local_preprocessing": true,
+    "all_models_train_and_test": true,
+    "all_required_test_r2_positive": true,
+    "metrics_units_and_formulas_consistent": true,
+    "model_selection_by_cv": true,
+    "best_r2_meets_assignment": true,
+    "gridsearch_results_verified_all_classic_models": true,
+    "three_feature_selection_methods": true,
+    "all_methods_reduce_features": true,
+    "pca_uses_variance_fraction": true,
+    "raw_and_pca_3d_plots": true,
+    "interpreted_3d_relationship": true,
+    "at_least_three_clusters": true,
+    "clustering_more_features_than_plot": true,
+    "cluster_models_same_test_rows": true,
+    "cluster_global_comparison": true,
+    "neural_required_architectures": true,
+    "neural_activation_experiments": true,
+    "neural_grid_all_24_candidates": true,
+    "neural_regression_output": true,
+    "neural_best_only_output": true,
+    "neural_best_config_matches_cv": true,
+    "two_tree_images_saved": true
+  },
+  "code_cells": 26,
+  "figures": [
+    {
+      "cell": 6,
+      "width": 1738,
+      "height": 553
+    },
+    {
+      "cell": 9,
+      "width": 1968,
+      "height": 1508
+    },
+    {
+      "cell": 11,
+      "width": 2191,
+      "height": 588
+    },
+    {
+      "cell": 19,
+      "width": 1508,
+      "height": 530
+    },
+    {
+      "cell": 21,
+      "width": 1623,
+      "height": 2497
+    },
+    {
+      "cell": 21,
+      "width": 1623,
+      "height": 473
+    },
+    {
+      "cell": 23,
+      "width": 2543,
+      "height": 1048
+    },
+    {
+      "cell": 25,
+      "width": 2658,
+      "height": 1163
+    },
+    {
+      "cell": 27,
+      "width": 1738,
+      "height": 588
+    },
+    {
+      "cell": 31,
+      "width": 1807,
+      "height": 818
+    },
+    {
+      "cell": 33,
+      "width": 1738,
+      "height": 553
+    },
+    {
+      "cell": 33,
+      "width": 931,
+      "height": 933
+    },
+    {
+      "cell": 38,
+      "width": 1623,
+      "height": 1669
+    },
+    {
+      "cell": 40,
+      "width": 794,
+      "height": 818
+    },
+    {
+      "cell": 41,
+      "width": 1623,
+      "height": 530
+    },
+    {
+      "cell": 43,
+      "width": 1623,
+      "height": 530
+    },
+    {
+      "cell": 47,
+      "width": 1623,
+      "height": 530
+    },
+    {
+      "cell": 47,
+      "width": 1623,
+      "height": 427
+    }
+  ],
+  "computed_explanations": 65,
+  "main_bytes": 4762550
+}
