@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.13)  29 OCT 2026 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.13)  29 OCT 2026 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -354,234 +354,436 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<img/Screenshot 2026-10-29 at 10.31.51.png, id=1, 390.45876pt x 149.55875pt>
-File: img/Screenshot 2026-10-29 at 10.31.51.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.31.51.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.31.51.png  used on input line 54.
-(pdftex.def)             Requested size: 318.66948pt x 122.06616pt.
+<img/data_cistenie_tabulka.png, id=1, 390.45876pt x 149.55875pt>
+File: img/data_cistenie_tabulka.png Graphic file (type png)
+<use img/data_cistenie_tabulka.png>
+Package pdftex.def Info: img/data_cistenie_tabulka.png  used on input line 50.
+(pdftex.def)             Requested size: 145.68144pt x 55.8014pt.
+<img/data_chybajuce_hodnoty_graf.png, id=3, 1316.92pt x 424.58624pt>
+File: img/data_chybajuce_hodnoty_graf.png Graphic file (type png)
+<use img/data_chybajuce_hodnoty_graf.png>
+Package pdftex.def Info: img/data_chybajuce_hodnoty_graf.png  used on input line 54.
+(pdftex.def)             Requested size: 295.90588pt x 95.39821pt.
+<img/data_kvalita_stlpcov_tabulka.png, id=4, 284.06125pt x 429.605pt>
+File: img/data_kvalita_stlpcov_tabulka.png Graphic file (type png)
+<use img/data_kvalita_stlpcov_tabulka.png>
+Package pdftex.def Info: img/data_kvalita_stlpcov_tabulka.png  used on input line 65.
+(pdftex.def)             Requested size: 127.46779pt x 192.77637pt.
+<img/data_cistenie_graf.png, id=5, 1179.40625pt x 473.77pt>
+File: img/data_cistenie_graf.png Graphic file (type png)
+<use img/data_cistenie_graf.png>
+Package pdftex.def Info: img/data_cistenie_graf.png  used on input line 69.
+(pdftex.def)             Requested size: 314.11954pt x 126.18462pt.
+<img/data_prve_riadky_tabulka.png, id=6, 1056.94875pt x 188.705pt>
+File: img/data_prve_riadky_tabulka.png Graphic file (type png)
+<use img/data_prve_riadky_tabulka.png>
+Package pdftex.def Info: img/data_prve_riadky_tabulka.png  used on input line 80.
+(pdftex.def)             Requested size: 455.24411pt x 81.27689pt.
 
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img/Screenshot 2026-10-29 at 10.31.51.png>]
-<img/Screenshot 2026-10-29 at 10.32.24.png, id=18, 1000.73875pt x 754.82pt>
-File: img/Screenshot 2026-10-29 at 10.32.24.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.32.24.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.32.24.png  used on input line 69.
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img/data_cistenie_tabulka.png> <./img/data_chybajuce_hodnoty_graf.png> <./img/data_kvalita_stlpcov_tabulka.png> <./img/data_cistenie_graf.png>]
+<img/data_popisna_statistika_tabulka.png, id=25, 607.26875pt x 388.45125pt>
+File: img/data_popisna_statistika_tabulka.png Graphic file (type png)
+<use img/data_popisna_statistika_tabulka.png>
+Package pdftex.def Info: img/data_popisna_statistika_tabulka.png  used on input line 84.
+(pdftex.def)             Requested size: 236.72888pt x 151.42424pt.
+<img/eda_histogramy_a_boxploty_graf.png, id=26, 1000.73875pt x 754.82pt>
+File: img/eda_histogramy_a_boxploty_graf.png Graphic file (type png)
+<use img/eda_histogramy_a_boxploty_graf.png>
+Package pdftex.def Info: img/eda_histogramy_a_boxploty_graf.png  used on input line 94.
 (pdftex.def)             Requested size: 327.77107pt x 247.22552pt.
-<img/Screenshot 2026-10-29 at 10.32.41.png, id=19, 1327.96124pt x 361.35pt>
-File: img/Screenshot 2026-10-29 at 10.32.41.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.32.41.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.32.41.png  used on input line 79.
+<img/eda_korelacie_a_casovy_priebeh_graf.png, id=27, 1327.96124pt x 361.35pt>
+File: img/eda_korelacie_a_casovy_priebeh_graf.png Graphic file (type png)
+<use img/eda_korelacie_a_casovy_priebeh_graf.png>
+Package pdftex.def Info: img/eda_korelacie_a_casovy_priebeh_graf.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24411pt x 123.87741pt.
 
 
-[2 <./img/Screenshot 2026-10-29 at 10.32.24.png> <./img/Screenshot 2026-10-29 at 10.32.41.png>]
-<img/Screenshot 2026-10-29 at 10.32.52.png, id=28, 1339.0025pt x 428.60126pt>
-File: img/Screenshot 2026-10-29 at 10.32.52.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.32.52.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.32.52.png  used on input line 90.
-(pdftex.def)             Requested size: 382.40338pt x 122.40114pt.
-<img/Screenshot 2026-10-29 at 10.33.20.png, id=29, 1336.995pt x 405.515pt>
-File: img/Screenshot 2026-10-29 at 10.33.20.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.33.20.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.33.20.png  used on input line 99.
-(pdftex.def)             Requested size: 382.40338pt x 115.98135pt.
+[2 <./img/data_prve_riadky_tabulka.png> <./img/data_popisna_statistika_tabulka.png> <./img/eda_histogramy_a_boxploty_graf.png>]
+<img/eda_co_pracovne_dni_a_vikend_graf.png, id=37, 1339.0025pt x 428.60126pt>
+File: img/eda_co_pracovne_dni_a_vikend_graf.png Graphic file (type png)
+<use img/eda_co_pracovne_dni_a_vikend_graf.png>
+Package pdftex.def Info: img/eda_co_pracovne_dni_a_vikend_graf.png  used on input line 113.
+(pdftex.def)             Requested size: 455.24411pt x 145.71596pt.
+<img/eda_co_teplota_a_vlhkost_graf.png, id=38, 1336.995pt x 405.515pt>
+File: img/eda_co_teplota_a_vlhkost_graf.png Graphic file (type png)
+<use img/eda_co_teplota_a_vlhkost_graf.png>
+Package pdftex.def Info: img/eda_co_teplota_a_vlhkost_graf.png  used on input line 122.
+(pdftex.def)             Requested size: 455.24411pt x 138.07745pt.
+<img/eda_korelacie_a_pocty_meteo_tabulka.png, id=39, 1011.78pt x 453.695pt>
+File: img/eda_korelacie_a_pocty_meteo_tabulka.png Graphic file (type png)
+<use img/eda_korelacie_a_pocty_meteo_tabulka.png>
+Package pdftex.def Info: img/eda_korelacie_a_pocty_meteo_tabulka.png  used on input line 129.
+(pdftex.def)             Requested size: 318.66948pt x 142.8939pt.
 
 
-[3 <./img/Screenshot 2026-10-29 at 10.32.52.png> <./img/Screenshot 2026-10-29 at 10.33.20.png>]
-<img/Screenshot 2026-10-29 at 10.33.37.png, id=38, 269.005pt x 95.35625pt>
-File: img/Screenshot 2026-10-29 at 10.33.37.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.33.37.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.33.37.png  used on input line 183.
+[3 <./img/eda_korelacie_a_casovy_priebeh_graf.png> <./img/eda_co_pracovne_dni_a_vikend_graf.png> <./img/eda_co_teplota_a_vlhkost_graf.png>]
+<img/data_rozdelenie_trening_test_tabulka.png, id=48, 269.005pt x 95.35625pt>
+File: img/data_rozdelenie_trening_test_tabulka.png Graphic file (type png)
+<use img/data_rozdelenie_trening_test_tabulka.png>
+Package pdftex.def Info: img/data_rozdelenie_trening_test_tabulka.png  used on input line 142.
 (pdftex.def)             Requested size: 177.54492pt x 62.9353pt.
-<img/Screenshot 2026-10-29 at 10.33.47.png, id=39, 1161.33875pt x 473.77pt>
-File: img/Screenshot 2026-10-29 at 10.33.47.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.33.47.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.33.47.png  used on input line 184.
+<img/data_rozdelenie_trening_test_graf.png, id=49, 1161.33875pt x 473.77pt>
+File: img/data_rozdelenie_trening_test_graf.png Graphic file (type png)
+<use img/data_rozdelenie_trening_test_graf.png>
+Package pdftex.def Info: img/data_rozdelenie_trening_test_graf.png  used on input line 143.
 (pdftex.def)             Requested size: 264.0424pt x 107.71416pt.
 
 
-[4 <./img/Screenshot 2026-10-29 at 10.33.37.png> <./img/Screenshot 2026-10-29 at 10.33.47.png>]
-<img/Screenshot 2026-10-29 at 10.34.14.png, id=48, 797.98125pt x 236.885pt>
-File: img/Screenshot 2026-10-29 at 10.34.14.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.34.14.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.34.14.png  used on input line 240.
+[4 <./img/eda_korelacie_a_pocty_meteo_tabulka.png> <./img/data_rozdelenie_trening_test_tabulka.png> <./img/data_rozdelenie_trening_test_graf.png>]
+<img/data_hranice_odlahlych_hodnot_tabulka.png, id=59, 314.17375pt x 242.9075pt>
+File: img/data_hranice_odlahlych_hodnot_tabulka.png Graphic file (type png)
+<use img/data_hranice_odlahlych_hodnot_tabulka.png>
+Package pdftex.def Info: img/data_hranice_odlahlych_hodnot_tabulka.png  used on input line 183.
+(pdftex.def)             Requested size: 227.62206pt x 175.98666pt.
+<img/modely_porovnanie_cv_tabulka.png, id=60, 797.98125pt x 236.885pt>
+File: img/modely_porovnanie_cv_tabulka.png Graphic file (type png)
+<use img/modely_porovnanie_cv_tabulka.png>
+Package pdftex.def Info: img/modely_porovnanie_cv_tabulka.png  used on input line 210.
 (pdftex.def)             Requested size: 455.24411pt x 135.14151pt.
+<img/decision_tree_ladenie_tabulka.png, id=61, 1309.89375pt x 219.82124pt>
+File: img/decision_tree_ladenie_tabulka.png Graphic file (type png)
+<use img/decision_tree_ladenie_tabulka.png>
+Package pdftex.def Info: img/decision_tree_ladenie_tabulka.png  used on input line 222.
+(pdftex.def)             Requested size: 455.24411pt x 76.3952pt.
 
 
-[5 <./img/Screenshot 2026-10-29 at 10.34.14.png>]
-<img/Screenshot 2026-10-29 at 10.35.43.png, id=54, 1287.81125pt x 523.9575pt>
-File: img/Screenshot 2026-10-29 at 10.35.43.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.35.43.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.35.43.png  used on input line 314.
+[5 <./img/data_hranice_odlahlych_hodnot_tabulka.png> <./img/modely_porovnanie_cv_tabulka.png>]
+<img/decision_tree_metriky_tabulka.png, id=67, 306.14375pt x 131.49126pt>
+File: img/decision_tree_metriky_tabulka.png Graphic file (type png)
+<use img/decision_tree_metriky_tabulka.png>
+Package pdftex.def Info: img/decision_tree_metriky_tabulka.png  used on input line 229.
+(pdftex.def)             Requested size: 140.21535pt x 60.22386pt.
+<img/decision_tree_dolezitost_priznakov_graf.png, id=68, 1050.92625pt x 568.1225pt>
+File: img/decision_tree_dolezitost_priznakov_graf.png Graphic file (type png)
+<use img/decision_tree_dolezitost_priznakov_graf.png>
+Package pdftex.def Info: img/decision_tree_dolezitost_priznakov_graf.png  used on input line 231.
+(pdftex.def)             Requested size: 200.30852pt x 108.28247pt.
+<img/decision_tree_dolezitost_priznakov_tabulka.png, id=69, 547.04375pt x 372.39125pt>
+File: img/decision_tree_dolezitost_priznakov_tabulka.png Graphic file (type png)
+<use img/decision_tree_dolezitost_priznakov_tabulka.png>
+Package pdftex.def Info: img/decision_tree_dolezitost_priznakov_tabulka.png  used on input line 236.
+(pdftex.def)             Requested size: 144.76875pt x 160.13194pt.
+<img/decision_tree_ilustracny_strom_graf.png, id=71, 1287.81125pt x 523.9575pt>
+File: img/decision_tree_ilustracny_strom_graf.png Graphic file (type png)
+<use img/decision_tree_ilustracny_strom_graf.png>
+Package pdftex.def Info: img/decision_tree_ilustracny_strom_graf.png  used on input line 253.
 (pdftex.def)             Requested size: 455.24411pt x 185.2187pt.
 
 
-[6 <./img/Screenshot 2026-10-29 at 10.35.43.png>]
-<img/Screenshot 2026-10-29 at 10.36.28.png, id=60, 1048.91875pt x 575.14874pt>
-File: img/Screenshot 2026-10-29 at 10.36.28.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.36.28.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.36.28.png  used on input line 405.
-(pdftex.def)             Requested size: 386.96027pt x 212.1786pt.
+[6 <./img/decision_tree_ladenie_tabulka.png> <./img/decision_tree_metriky_tabulka.png> <./img/decision_tree_dolezitost_priznakov_graf.png> <./img/decision_tree_ilustracny_strom_graf.png> <./img/decision_tree_dolezitost_priznakov_tabulka.png>]
+<img/random_forest_ladenie_tabulka.png, id=82, 1322.9425pt x 223.83624pt>
+File: img/random_forest_ladenie_tabulka.png Graphic file (type png)
+<use img/random_forest_ladenie_tabulka.png>
+Package pdftex.def Info: img/random_forest_ladenie_tabulka.png  used on input line 270.
+(pdftex.def)             Requested size: 455.24411pt x 77.02206pt.
+<img/random_forest_metriky_tabulka.png, id=83, 305.14pt x 119.44624pt>
+File: img/random_forest_metriky_tabulka.png Graphic file (type png)
+<use img/random_forest_metriky_tabulka.png>
+Package pdftex.def Info: img/random_forest_metriky_tabulka.png  used on input line 277.
+(pdftex.def)             Requested size: 140.21535pt x 54.88942pt.
+<img/random_forest_permutacna_dolezitost_graf.png, id=84, 1048.91875pt x 575.14874pt>
+File: img/random_forest_permutacna_dolezitost_graf.png Graphic file (type png)
+<use img/random_forest_permutacna_dolezitost_graf.png>
+Package pdftex.def Info: img/random_forest_permutacna_dolezitost_graf.png  used on input line 279.
+(pdftex.def)             Requested size: 200.30852pt x 109.83228pt.
+<img/random_forest_dolezitost_priznakov_tabulka.png, id=85, 549.05125pt x 373.395pt>
+File: img/random_forest_dolezitost_priznakov_tabulka.png Graphic file (type png)
+<use img/random_forest_dolezitost_priznakov_tabulka.png>
+Package pdftex.def Info: img/random_forest_dolezitost_priznakov_tabulka.png  used on input line 284.
+(pdftex.def)             Requested size: 120.6394pt x 133.4433pt.
+<img/random_forest_vybrane_stromy_graf.png, id=87, 732.7375pt x 690.58pt>
+File: img/random_forest_vybrane_stromy_graf.png Graphic file (type png)
+<use img/random_forest_vybrane_stromy_graf.png>
+Package pdftex.def Info: img/random_forest_vybrane_stromy_graf.png  used on input line 303.
+(pdftex.def)             Requested size: 282.24911pt x 266.00583pt.
+<img/random_forest_vybrane_stromy_tabulka.png, id=88, 521.95pt x 670.505pt>
+File: img/random_forest_vybrane_stromy_tabulka.png Graphic file (type png)
+<use img/random_forest_vybrane_stromy_tabulka.png>
+Package pdftex.def Info: img/random_forest_vybrane_stromy_tabulka.png  used on input line 307.
+(pdftex.def)             Requested size: 159.33821pt x 204.68277pt.
 
 
-[7 <./img/Screenshot 2026-10-29 at 10.36.28.png>]
-<img/Screenshot 2026-10-29 at 10.36.48.png, id=66, 732.7375pt x 690.58pt>
-File: img/Screenshot 2026-10-29 at 10.36.48.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.36.48.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.36.48.png  used on input line 419.
-(pdftex.def)             Requested size: 455.25409pt x 429.06139pt.
+[7 <./img/random_forest_ladenie_tabulka.png> <./img/random_forest_metriky_tabulka.png> <./img/random_forest_permutacna_dolezitost_graf.png> <./img/random_forest_dolezitost_priznakov_tabulka.png>]
+<img/extra_trees_ladenie_tabulka.png, id=98, 1323.94624pt x 217.81375pt>
+File: img/extra_trees_ladenie_tabulka.png Graphic file (type png)
+<use img/extra_trees_ladenie_tabulka.png>
+Package pdftex.def Info: img/extra_trees_ladenie_tabulka.png  used on input line 318.
+(pdftex.def)             Requested size: 455.24411pt x 74.89322pt.
+<img/extra_trees_metriky_tabulka.png, id=99, 311.1625pt x 118.4425pt>
+File: img/extra_trees_metriky_tabulka.png Graphic file (type png)
+<use img/extra_trees_metriky_tabulka.png>
+Package pdftex.def Info: img/extra_trees_metriky_tabulka.png  used on input line 325.
+(pdftex.def)             Requested size: 200.30852pt x 76.24751pt.
+<img/extra_trees_dolezitost_priznakov_tabulka.png, id=100, 532.99126pt x 368.37625pt>
+File: img/extra_trees_dolezitost_priznakov_tabulka.png Graphic file (type png)
+<use img/extra_trees_dolezitost_priznakov_tabulka.png>
+Package pdftex.def Info: img/extra_trees_dolezitost_priznakov_tabulka.png  used on input line 330.
+(pdftex.def)             Requested size: 120.6394pt x 133.44328pt.
+<img/xgboost_ladenie_tabulka.png, id=102, 1329.96875pt x 238.8925pt>
+File: img/xgboost_ladenie_tabulka.png Graphic file (type png)
+<use img/xgboost_ladenie_tabulka.png>
+Package pdftex.def Info: img/xgboost_ladenie_tabulka.png  used on input line 343.
+(pdftex.def)             Requested size: 455.24411pt x 81.7728pt.
 
 
-[8 <./img/Screenshot 2026-10-29 at 10.36.48.png>]
+[8 <./img/random_forest_vybrane_stromy_graf.png> <./img/random_forest_vybrane_stromy_tabulka.png> <./img/extra_trees_ladenie_tabulka.png> <./img/extra_trees_metriky_tabulka.png> <./img/extra_trees_dolezitost_priznakov_tabulka.png>]
+<img/xgboost_metriky_tabulka.png, id=112, 310.15875pt x 120.45pt>
+File: img/xgboost_metriky_tabulka.png Graphic file (type png)
+<use img/xgboost_metriky_tabulka.png>
+Package pdftex.def Info: img/xgboost_metriky_tabulka.png  used on input line 350.
+(pdftex.def)             Requested size: 200.30852pt x 77.78981pt.
+<img/xgboost_dolezitost_priznakov_tabulka.png, id=113, 450.68375pt x 366.36874pt>
+File: img/xgboost_dolezitost_priznakov_tabulka.png Graphic file (type png)
+<use img/xgboost_dolezitost_priznakov_tabulka.png>
+Package pdftex.def Info: img/xgboost_dolezitost_priznakov_tabulka.png  used on input line 355.
+(pdftex.def)             Requested size: 120.6394pt x 125.92448pt.
+<img/hist_gradient_boosting_ladenie_tabulka.png, id=115, 1316.92pt x 221.82875pt>
+File: img/hist_gradient_boosting_ladenie_tabulka.png Graphic file (type png)
+<use img/hist_gradient_boosting_ladenie_tabulka.png>
+Package pdftex.def Info: img/hist_gradient_boosting_ladenie_tabulka.png  used on input line 368.
+(pdftex.def)             Requested size: 455.24411pt x 76.6833pt.
+<img/hist_gradient_boosting_metriky_tabulka.png, id=116, 308.15125pt x 114.4275pt>
+File: img/hist_gradient_boosting_metriky_tabulka.png Graphic file (type png)
+<use img/hist_gradient_boosting_metriky_tabulka.png>
+Package pdftex.def Info: img/hist_gradient_boosting_metriky_tabulka.png  used on input line 375.
+(pdftex.def)             Requested size: 200.30852pt x 74.38397pt.
+<img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png, id=117, 833.1125pt x 365.365pt>
+File: img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png Graphic file (type png)
+<use img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png>
+Package pdftex.def Info: img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png  used on input line 380.
+(pdftex.def)             Requested size: 120.6394pt x 109.26738pt.
 
-[9]
 
-[10]
-<img/Screenshot 2026-10-29 at 10.39.41.png, id=77, 537.00626pt x 264.99pt>
-File: img/Screenshot 2026-10-29 at 10.39.41.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.39.41.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.39.41.png  used on input line 704.
-(pdftex.def)             Requested size: 455.24411pt x 224.64413pt.
-
-
-[11 <./img/Screenshot 2026-10-29 at 10.39.41.png>]
-<img/Screenshot 2026-10-29 at 10.40.41.png, id=85, 415.5525pt x 625.33624pt>
-File: img/Screenshot 2026-10-29 at 10.40.41.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.40.41.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.40.41.png  used on input line 721.
+[9 <./img/xgboost_ladenie_tabulka.png> <./img/xgboost_metriky_tabulka.png> <./img/hist_gradient_boosting_ladenie_tabulka.png> <./img/hist_gradient_boosting_metriky_tabulka.png> <./img/xgboost_dolezitost_priznakov_tabulka.png> <./img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png>]
+<img/svr_ladenie_tabulka.png, id=130, 1317.92375pt x 216.81pt>
+File: img/svr_ladenie_tabulka.png Graphic file (type png)
+<use img/svr_ladenie_tabulka.png>
+Package pdftex.def Info: img/svr_ladenie_tabulka.png  used on input line 400.
+(pdftex.def)             Requested size: 455.24411pt x 74.89215pt.
+<img/svr_metriky_tabulka.png, id=131, 308.15125pt x 125.46875pt>
+File: img/svr_metriky_tabulka.png Graphic file (type png)
+<use img/svr_metriky_tabulka.png>
+Package pdftex.def Info: img/svr_metriky_tabulka.png  used on input line 407.
+(pdftex.def)             Requested size: 200.30852pt x 81.56137pt.
+<img/svr_permutacna_dolezitost_tabulka.png, id=132, 703.62875pt x 370.38374pt>
+File: img/svr_permutacna_dolezitost_tabulka.png Graphic file (type png)
+<use img/svr_permutacna_dolezitost_tabulka.png>
+Package pdftex.def Info: img/svr_permutacna_dolezitost_tabulka.png  used on input line 412.
+(pdftex.def)             Requested size: 120.6394pt x 109.9266pt.
+<img/modely_porovnanie_metrik_tabulka.png, id=134, 537.00626pt x 264.99pt>
+File: img/modely_porovnanie_metrik_tabulka.png Graphic file (type png)
+<use img/modely_porovnanie_metrik_tabulka.png>
+Package pdftex.def Info: img/modely_porovnanie_metrik_tabulka.png  used on input line 431.
+(pdftex.def)             Requested size: 223.07211pt x 110.07393pt.
+<img/modely_porovnanie_metrik_graf.png, id=135, 1345.025pt x 470.75874pt>
+File: img/modely_porovnanie_metrik_graf.png Graphic file (type png)
+<use img/modely_porovnanie_metrik_graf.png>
+Package pdftex.def Info: img/modely_porovnanie_metrik_graf.png  used on input line 435.
+(pdftex.def)             Requested size: 218.51521pt x 76.47943pt.
+<img/modely_rezidualy_graf.png, id=136, 415.5525pt x 625.33624pt>
+File: img/modely_rezidualy_graf.png Graphic file (type png)
+<use img/modely_rezidualy_graf.png>
+Package pdftex.def Info: img/modely_rezidualy_graf.png  used on input line 447.
 (pdftex.def)             Requested size: 359.61282pt x 541.15651pt.
 
 
-[12 <./img/Screenshot 2026-10-29 at 10.40.41.png>]
-<img/Screenshot 2026-10-29 at 10.41.01.png, id=90, 1332.98pt x 424.58624pt>
-File: img/Screenshot 2026-10-29 at 10.41.01.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.41.01.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.41.01.png  used on input line 755.
+[10 <./img/svr_ladenie_tabulka.png> <./img/svr_metriky_tabulka.png> <./img/modely_porovnanie_metrik_tabulka.png> <./img/modely_porovnanie_metrik_graf.png> <./img/svr_permutacna_dolezitost_tabulka.png>]
+<img/modely_rezidualy_tabulka.png, id=149, 719.68875pt x 244.915pt>
+File: img/modely_rezidualy_tabulka.png Graphic file (type png)
+<use img/modely_rezidualy_tabulka.png>
+Package pdftex.def Info: img/modely_rezidualy_tabulka.png  used on input line 457.
+(pdftex.def)             Requested size: 455.24411pt x 154.92882pt.
+
+
+[11 <./img/modely_rezidualy_graf.png>]
+<img/modely_rezidualy_a_chyby_podla_co_graf.png, id=154, 1332.98pt x 424.58624pt>
+File: img/modely_rezidualy_a_chyby_podla_co_graf.png Graphic file (type png)
+<use img/modely_rezidualy_a_chyby_podla_co_graf.png>
+Package pdftex.def Info: img/modely_rezidualy_a_chyby_podla_co_graf.png  used on input line 466.
 (pdftex.def)             Requested size: 455.24411pt x 145.00528pt.
-<img/Screenshot 2026-10-29 at 10.41.23.png, id=91, 1347.0325pt x 391.4625pt>
-File: img/Screenshot 2026-10-29 at 10.41.23.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.41.23.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.41.23.png  used on input line 762.
+<img/svr_rezidualy_podla_co_a_casu_graf.png, id=155, 1347.0325pt x 391.4625pt>
+File: img/svr_rezidualy_podla_co_a_casu_graf.png Graphic file (type png)
+<use img/svr_rezidualy_podla_co_a_casu_graf.png>
+Package pdftex.def Info: img/svr_rezidualy_podla_co_a_casu_graf.png  used on input line 473.
 (pdftex.def)             Requested size: 455.24411pt x 132.30104pt.
 
 
-[13 <./img/Screenshot 2026-10-29 at 10.41.01.png> <./img/Screenshot 2026-10-29 at 10.41.23.png>]
-<img/Screenshot 2026-10-29 at 10.41.37.png, id=98, 870.25125pt x 686.565pt>
-File: img/Screenshot 2026-10-29 at 10.41.37.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.41.37.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.41.37.png  used on input line 789.
+[12 <./img/modely_rezidualy_tabulka.png> <./img/modely_rezidualy_a_chyby_podla_co_graf.png> <./img/svr_rezidualy_podla_co_a_casu_graf.png>]
+<img/pca_povodne_senzory_boxploty_a_statistika.png, id=162, 1327.96124pt x 479.7925pt>
+File: img/pca_povodne_senzory_boxploty_a_statistika.png Graphic file (type png)
+<use img/pca_povodne_senzory_boxploty_a_statistika.png>
+Package pdftex.def Info: img/pca_povodne_senzory_boxploty_a_statistika.png  used on input line 493.
+(pdftex.def)             Requested size: 455.24411pt x 164.48167pt.
+<img/pca_povodne_senzory_3d_graf.png, id=163, 870.25125pt x 686.565pt>
+File: img/pca_povodne_senzory_3d_graf.png Graphic file (type png)
+<use img/pca_povodne_senzory_3d_graf.png>
+Package pdftex.def Info: img/pca_povodne_senzory_3d_graf.png  used on input line 503.
 (pdftex.def)             Requested size: 223.07211pt x 175.98842pt.
-<img/Screenshot 2026-10-29 at 10.43.16.png, id=99, 838.13126pt x 715.67375pt>
-File: img/Screenshot 2026-10-29 at 10.43.16.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.43.16.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.43.16.png  used on input line 790.
+<img/pca_projekcia_3d_graf.png, id=164, 838.13126pt x 715.67375pt>
+File: img/pca_projekcia_3d_graf.png Graphic file (type png)
+<use img/pca_projekcia_3d_graf.png>
+Package pdftex.def Info: img/pca_projekcia_3d_graf.png  used on input line 504.
 (pdftex.def)             Requested size: 223.07211pt x 190.47165pt.
+<img/pca_senzory_a_komponenty_boxploty.png, id=165, 1307.88625pt x 423.5825pt>
+File: img/pca_senzory_a_komponenty_boxploty.png Graphic file (type png)
+<use img/pca_senzory_a_komponenty_boxploty.png>
+Package pdftex.def Info: img/pca_senzory_a_komponenty_boxploty.png  used on input line 517.
+(pdftex.def)             Requested size: 273.14923pt x 88.46373pt.
+<img/pca_statistika_komponentov_tabulka.png, id=166, 450.68375pt x 111.41624pt>
+File: img/pca_statistika_komponentov_tabulka.png Graphic file (type png)
+<use img/pca_statistika_komponentov_tabulka.png>
+Package pdftex.def Info: img/pca_statistika_komponentov_tabulka.png  used on input line 521.
+(pdftex.def)             Requested size: 168.4381pt x 41.64157pt.
 
 
-[14 <./img/Screenshot 2026-10-29 at 10.41.37.png> <./img/Screenshot 2026-10-29 at 10.43.16.png>]
-<img/Screenshot 2026-10-29 at 10.44.57.png, id=105, 1356.06625pt x 798.985pt>
-File: img/Screenshot 2026-10-29 at 10.44.57.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.44.57.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.44.57.png  used on input line 814.
-(pdftex.def)             Requested size: 357.84534pt x 210.84003pt.
-<img/Screenshot 2026-10-29 at 10.45.27.png, id=106, 952.55875pt x 505.89pt>
-File: img/Screenshot 2026-10-29 at 10.45.27.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.45.27.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.45.27.png  used on input line 827.
-(pdftex.def)             Requested size: 291.1332pt x 154.61656pt.
+[13 <./img/pca_povodne_senzory_boxploty_a_statistika.png> <./img/pca_povodne_senzory_3d_graf.png> <./img/pca_projekcia_3d_graf.png>]
+<img/redukcia_vyber_podla_korelacie_graf.png, id=174, 1356.06625pt x 798.985pt>
+File: img/redukcia_vyber_podla_korelacie_graf.png Graphic file (type png)
+<use img/redukcia_vyber_podla_korelacie_graf.png>
+Package pdftex.def Info: img/redukcia_vyber_podla_korelacie_graf.png  used on input line 559.
+(pdftex.def)             Requested size: 310.10918pt x 182.7142pt.
+<img/redukcia_vyber_podla_rf_graf.png, id=175, 952.55875pt x 505.89pt>
+File: img/redukcia_vyber_podla_rf_graf.png Graphic file (type png)
+<use img/redukcia_vyber_podla_rf_graf.png>
+Package pdftex.def Info: img/redukcia_vyber_podla_rf_graf.png  used on input line 575.
+(pdftex.def)             Requested size: 318.66948pt x 169.24454pt.
+<img/redukcia_vyber_podla_rf_tabulka.png, id=176, 233.87375pt x 410.53375pt>
+File: img/redukcia_vyber_podla_rf_tabulka.png Graphic file (type png)
+<use img/redukcia_vyber_podla_rf_tabulka.png>
+Package pdftex.def Info: img/redukcia_vyber_podla_rf_tabulka.png  used on input line 579.
+(pdftex.def)             Requested size: 122.91785pt x 215.76521pt.
 
 
-[15 <./img/Screenshot 2026-10-29 at 10.44.57.png> <./img/Screenshot 2026-10-29 at 10.45.27.png>]
-<img/Screenshot 2026-10-29 at 10.45.47.png, id=112, 1234.6125pt x 375.4025pt>
-File: img/Screenshot 2026-10-29 at 10.45.47.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.45.47.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.45.47.png  used on input line 842.
-(pdftex.def)             Requested size: 455.24411pt x 138.42131pt.
-<img/Screenshot 2026-10-29 at 10.46.05.png, id=113, 1354.05875pt x 516.93124pt>
-File: img/Screenshot 2026-10-29 at 10.46.05.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.46.05.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.46.05.png  used on input line 858.
+[14 <./img/pca_senzory_a_komponenty_boxploty.png> <./img/pca_statistika_komponentov_tabulka.png> <./img/redukcia_vyber_podla_korelacie_graf.png>]
+<img/pca_vyber_prahu_variancie_graf.png, id=183, 1234.6125pt x 375.4025pt>
+File: img/pca_vyber_prahu_variancie_graf.png Graphic file (type png)
+<use img/pca_vyber_prahu_variancie_graf.png>
+Package pdftex.def Info: img/pca_vyber_prahu_variancie_graf.png  used on input line 596.
+(pdftex.def)             Requested size: 291.35594pt x 88.59192pt.
+<img/pca_vyber_prahu_variancie_tabulka.png, id=184, 678.535pt x 121.45375pt>
+File: img/pca_vyber_prahu_variancie_tabulka.png Graphic file (type png)
+<use img/pca_vyber_prahu_variancie_tabulka.png>
+Package pdftex.def Info: img/pca_vyber_prahu_variancie_tabulka.png  used on input line 601.
+(pdftex.def)             Requested size: 150.23138pt x 73.31041pt.
+<img/redukcia_porovnanie_strategii.png, id=186, 1354.05875pt x 516.93124pt>
+File: img/redukcia_porovnanie_strategii.png Graphic file (type png)
+<use img/redukcia_porovnanie_strategii.png>
+Package pdftex.def Info: img/redukcia_porovnanie_strategii.png  used on input line 618.
 (pdftex.def)             Requested size: 455.24411pt x 173.79814pt.
 
 
-[16 <./img/Screenshot 2026-10-29 at 10.45.47.png> <./img/Screenshot 2026-10-29 at 10.46.05.png>]
-<img/Screenshot 2026-10-29 at 10.46.30.png, id=119, 545.03625pt x 556.0775pt>
-File: img/Screenshot 2026-10-29 at 10.46.30.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.46.30.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.46.30.png  used on input line 873.
+[15 <./img/redukcia_vyber_podla_rf_graf.png> <./img/redukcia_vyber_podla_rf_tabulka.png> <./img/pca_vyber_prahu_variancie_graf.png> <./img/pca_vyber_prahu_variancie_tabulka.png>]
+<img/redukcia_rezidualy_graf.png, id=195, 545.03625pt x 556.0775pt>
+File: img/redukcia_rezidualy_graf.png Graphic file (type png)
+<use img/redukcia_rezidualy_graf.png>
+Package pdftex.def Info: img/redukcia_rezidualy_graf.png  used on input line 631.
 (pdftex.def)             Requested size: 414.27344pt x 422.66571pt.
-<img/Screenshot 2026-10-29 at 10.46.40.png, id=120, 602.25pt x 174.6525pt>
-File: img/Screenshot 2026-10-29 at 10.46.40.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.46.40.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.46.40.png  used on input line 877.
+
+
+[16 <./img/redukcia_porovnanie_strategii.png>]
+<img/redukcia_rezidualy_tabulka.png, id=200, 602.25pt x 174.6525pt>
+File: img/redukcia_rezidualy_tabulka.png Graphic file (type png)
+<use img/redukcia_rezidualy_tabulka.png>
+Package pdftex.def Info: img/redukcia_rezidualy_tabulka.png  used on input line 635.
 (pdftex.def)             Requested size: 411.9782pt x 119.47366pt.
 
 
-[17 <./img/Screenshot 2026-10-29 at 10.46.30.png> <./img/Screenshot 2026-10-29 at 10.46.40.png>]
-<img/Screenshot 2026-10-29 at 10.46.53.png, id=126, 736.7525pt x 699.61375pt>
-File: img/Screenshot 2026-10-29 at 10.46.53.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.46.53.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.46.53.png  used on input line 895.
-(pdftex.def)             Requested size: 281.2392pt x 267.06229pt.
-<img/Screenshot 2026-10-29 at 10.48.59.png, id=127, 1347.0325pt x 490.83376pt>
-File: img/Screenshot 2026-10-29 at 10.48.59.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.48.59.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.48.59.png  used on input line 899.
-(pdftex.def)             Requested size: 455.24411pt x 165.88516pt.
+[17 <./img/redukcia_rezidualy_graf.png> <./img/redukcia_rezidualy_tabulka.png>]
+<img/kmeans_vyber_poctu_zhlukov.png, id=206, 1351.0475pt x 714.67pt>
+File: img/kmeans_vyber_poctu_zhlukov.png Graphic file (type png)
+<use img/kmeans_vyber_poctu_zhlukov.png>
+Package pdftex.def Info: img/kmeans_vyber_poctu_zhlukov.png  used on input line 654.
+(pdftex.def)             Requested size: 223.07211pt x 117.99179pt.
+<img/kmeans_laktova_metoda_graf.png, id=207, 730.73pt x 333.245pt>
+File: img/kmeans_laktova_metoda_graf.png Graphic file (type png)
+<use img/kmeans_laktova_metoda_graf.png>
+Package pdftex.def Info: img/kmeans_laktova_metoda_graf.png  used on input line 658.
+(pdftex.def)             Requested size: 223.07211pt x 101.72855pt.
+<img/kmeans_zhluky_viac_pohladov_graf.png, id=208, 874.0655pt x 800.591pt>
+File: img/kmeans_zhluky_viac_pohladov_graf.png Graphic file (type png)
+<use img/kmeans_zhluky_viac_pohladov_graf.png>
+Package pdftex.def Info: img/kmeans_zhluky_viac_pohladov_graf.png  used on input line 667.
+(pdftex.def)             Requested size: 223.07211pt x 204.31291pt.
+<img/kmeans_priebeh_iteracii_graf.png, id=209, 875.27pt x 656.051pt>
+File: img/kmeans_priebeh_iteracii_graf.png Graphic file (type png)
+<use img/kmeans_priebeh_iteracii_graf.png>
+Package pdftex.def Info: img/kmeans_priebeh_iteracii_graf.png  used on input line 671.
+(pdftex.def)             Requested size: 223.07211pt x 167.19568pt.
+<img/kmeans_zhluky_3d_graf.png, id=210, 736.7525pt x 699.61375pt>
+File: img/kmeans_zhluky_3d_graf.png Graphic file (type png)
+<use img/kmeans_zhluky_3d_graf.png>
+Package pdftex.def Info: img/kmeans_zhluky_3d_graf.png  used on input line 683.
+(pdftex.def)             Requested size: 167.53291pt x 159.0823pt.
+<img/kmeans_profily_zhlukov_graf.png, id=211, 1347.0325pt x 490.83376pt>
+File: img/kmeans_profily_zhlukov_graf.png Graphic file (type png)
+<use img/kmeans_profily_zhlukov_graf.png>
+Package pdftex.def Info: img/kmeans_profily_zhlukov_graf.png  used on input line 687.
+(pdftex.def)             Requested size: 232.17198pt x 84.59401pt.
+<img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png, id=212, 663.47874pt x 179.67125pt>
+File: img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png Graphic file (type png)
+<use img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png>
+Package pdftex.def Info: img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png  used on input line 689.
+(pdftex.def)             Requested size: 232.17198pt x 62.87216pt.
 
 
-[18 <./img/Screenshot 2026-10-29 at 10.46.53.png> <./img/Screenshot 2026-10-29 at 10.48.59.png>]
-<img/Screenshot 2026-10-29 at 10.49.15.png, id=133, 421.575pt x 483.8075pt>
-File: img/Screenshot 2026-10-29 at 10.49.15.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.49.15.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.49.15.png  used on input line 916.
-(pdftex.def)             Requested size: 257.21182pt x 295.1812pt.
-<img/Screenshot 2026-10-29 at 10.49.40.png, id=134, 1339.0025pt x 411.5375pt>
-File: img/Screenshot 2026-10-29 at 10.49.40.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.49.40.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.49.40.png  used on input line 920.
-(pdftex.def)             Requested size: 455.24411pt x 139.91461pt.
+[18 <./img/kmeans_vyber_poctu_zhlukov.png> <./img/kmeans_laktova_metoda_graf.png> <./img/kmeans_zhluky_viac_pohladov_graf.png> <./img/kmeans_priebeh_iteracii_graf.png> <./img/kmeans_zhluky_3d_graf.png> <./img/kmeans_profily_zhlukov_graf.png> <./img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png>]
+<img/lokalne_modely_porovnanie_metrik_tabulka.png, id=223, 421.575pt x 483.8075pt>
+File: img/lokalne_modely_porovnanie_metrik_tabulka.png Graphic file (type png)
+<use img/lokalne_modely_porovnanie_metrik_tabulka.png>
+Package pdftex.def Info: img/lokalne_modely_porovnanie_metrik_tabulka.png  used on input line 709.
+(pdftex.def)             Requested size: 154.78133pt x 177.63286pt.
+<img/lokalne_modely_porovnanie_rmse_graf.png, id=224, 1339.0025pt x 411.5375pt>
+File: img/lokalne_modely_porovnanie_rmse_graf.png Graphic file (type png)
+<use img/lokalne_modely_porovnanie_rmse_graf.png>
+Package pdftex.def Info: img/lokalne_modely_porovnanie_rmse_graf.png  used on input line 713.
+(pdftex.def)             Requested size: 286.806pt x 88.14601pt.
+<img/lokalne_modely_rezidualy_graf.png, id=225, 1353.055pt x 446.66875pt>
+File: img/lokalne_modely_rezidualy_graf.png Graphic file (type png)
+<use img/lokalne_modely_rezidualy_graf.png>
+Package pdftex.def Info: img/lokalne_modely_rezidualy_graf.png  used on input line 715.
+(pdftex.def)             Requested size: 286.806pt x 94.6756pt.
 
 
-[19 <./img/Screenshot 2026-10-29 at 10.49.15.png> <./img/Screenshot 2026-10-29 at 10.49.40.png>]
-<img/Screenshot 2026-10-29 at 10.49.59.png, id=141, 273.02pt x 118.4425pt>
-File: img/Screenshot 2026-10-29 at 10.49.59.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.49.59.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.49.59.png  used on input line 944.
+[19 <./img/lokalne_modely_porovnanie_metrik_tabulka.png> <./img/lokalne_modely_porovnanie_rmse_graf.png> <./img/lokalne_modely_rezidualy_graf.png>]
+<img/neuronova_siet_metriky_tabulka.png, id=233, 273.02pt x 118.4425pt>
+File: img/neuronova_siet_metriky_tabulka.png Graphic file (type png)
+<use img/neuronova_siet_metriky_tabulka.png>
+Package pdftex.def Info: img/neuronova_siet_metriky_tabulka.png  used on input line 740.
 (pdftex.def)             Requested size: 168.4381pt x 73.07213pt.
-<img/Screenshot 2026-10-29 at 10.50.16.png, id=142, 1354.05875pt x 437.635pt>
-File: img/Screenshot 2026-10-29 at 10.50.16.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.50.16.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.50.16.png  used on input line 945.
+<img/neuronova_siet_krivky_ucenia_graf.png, id=234, 1354.05875pt x 437.635pt>
+File: img/neuronova_siet_krivky_ucenia_graf.png Graphic file (type png)
+<use img/neuronova_siet_krivky_ucenia_graf.png>
+Package pdftex.def Info: img/neuronova_siet_krivky_ucenia_graf.png  used on input line 741.
 (pdftex.def)             Requested size: 273.14923pt x 88.28003pt.
-<img/Screenshot 2026-10-29 at 10.50.27.png, id=143, 1351.0475pt x 449.68pt>
-File: img/Screenshot 2026-10-29 at 10.50.27.png Graphic file (type png)
-<use img/Screenshot 2026-10-29 at 10.50.27.png>
-Package pdftex.def Info: img/Screenshot 2026-10-29 at 10.50.27.png  used on input line 952.
+<img/neuronova_siet_rezidualy.png, id=235, 1351.0475pt x 449.68pt>
+File: img/neuronova_siet_rezidualy.png Graphic file (type png)
+<use img/neuronova_siet_rezidualy.png>
+Package pdftex.def Info: img/neuronova_siet_rezidualy.png  used on input line 748.
 (pdftex.def)             Requested size: 455.24411pt x 151.52373pt.
 
 
-[20 <./img/Screenshot 2026-10-29 at 10.49.59.png> <./img/Screenshot 2026-10-29 at 10.50.16.png> <./img/Screenshot 2026-10-29 at 10.50.27.png>] (./dokumentacia.aux)
+[20 <./img/neuronova_siet_metriky_tabulka.png> <./img/neuronova_siet_krivky_ucenia_graf.png> <./img/neuronova_siet_rezidualy.png>] (./dokumentacia.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7719 strings out of 473190
- 129094 string characters out of 5715800
- 571495 words of memory out of 5000000
- 30628 multiletter control sequences out of 15000+600000
- 589866 words of font info for 223 fonts, out of 8000000 for 9000
+ 8016 strings out of 473190
+ 143692 string characters out of 5715800
+ 561495 words of memory out of 5000000
+ 30949 multiletter control sequences out of 15000+600000
+ 586188 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,1052b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on dokumentacia.pdf (20 pages, 8714622 bytes).
+ 57i,11n,65p,1052b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on dokumentacia.pdf (20 pages, 13545912 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 328 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 53911 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 45961 words of extra memory for PDF output out of 51595 (max. 10000000)
 

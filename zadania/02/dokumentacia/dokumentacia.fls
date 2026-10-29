@@ -136,81 +136,179 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.31.51.png
-INPUT ./img/Screenshot 2026-10-29 at 10.31.51.png
-INPUT ./img/Screenshot 2026-10-29 at 10.31.51.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT ./img/data_cistenie_tabulka.png
+INPUT ./img/data_cistenie_tabulka.png
+INPUT ./img/data_cistenie_tabulka.png
 OUTPUT dokumentacia.pdf
-INPUT ./img/Screenshot 2026-10-29 at 10.31.51.png
+INPUT ./img/data_cistenie_tabulka.png
+INPUT ./img/data_chybajuce_hodnoty_graf.png
+INPUT ./img/data_chybajuce_hodnoty_graf.png
+INPUT ./img/data_chybajuce_hodnoty_graf.png
+INPUT ./img/data_chybajuce_hodnoty_graf.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./img/data_kvalita_stlpcov_tabulka.png
+INPUT ./img/data_kvalita_stlpcov_tabulka.png
+INPUT ./img/data_kvalita_stlpcov_tabulka.png
+INPUT ./img/data_kvalita_stlpcov_tabulka.png
+INPUT ./img/data_cistenie_graf.png
+INPUT ./img/data_cistenie_graf.png
+INPUT ./img/data_cistenie_graf.png
+INPUT ./img/data_cistenie_graf.png
+INPUT ./img/data_prve_riadky_tabulka.png
+INPUT ./img/data_prve_riadky_tabulka.png
+INPUT ./img/data_prve_riadky_tabulka.png
+INPUT ./img/data_prve_riadky_tabulka.png
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT ./img/Screenshot 2026-10-29 at 10.32.24.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.24.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.24.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.24.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.52.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.52.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.52.png
-INPUT ./img/Screenshot 2026-10-29 at 10.32.52.png
+INPUT ./img/data_popisna_statistika_tabulka.png
+INPUT ./img/data_popisna_statistika_tabulka.png
+INPUT ./img/data_popisna_statistika_tabulka.png
+INPUT ./img/data_popisna_statistika_tabulka.png
+INPUT ./img/eda_histogramy_a_boxploty_graf.png
+INPUT ./img/eda_histogramy_a_boxploty_graf.png
+INPUT ./img/eda_histogramy_a_boxploty_graf.png
+INPUT ./img/eda_histogramy_a_boxploty_graf.png
+INPUT ./img/eda_korelacie_a_casovy_priebeh_graf.png
+INPUT ./img/eda_korelacie_a_casovy_priebeh_graf.png
+INPUT ./img/eda_korelacie_a_casovy_priebeh_graf.png
+INPUT ./img/eda_korelacie_a_casovy_priebeh_graf.png
+INPUT ./img/eda_co_pracovne_dni_a_vikend_graf.png
+INPUT ./img/eda_co_pracovne_dni_a_vikend_graf.png
+INPUT ./img/eda_co_pracovne_dni_a_vikend_graf.png
+INPUT ./img/eda_co_pracovne_dni_a_vikend_graf.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.33.20.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.20.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.20.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.20.png
+INPUT ./img/eda_co_teplota_a_vlhkost_graf.png
+INPUT ./img/eda_co_teplota_a_vlhkost_graf.png
+INPUT ./img/eda_co_teplota_a_vlhkost_graf.png
+INPUT ./img/eda_co_teplota_a_vlhkost_graf.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcbx1095.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.33.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.33.47.png
+INPUT ./img/eda_korelacie_a_pocty_meteo_tabulka.png
+INPUT ./img/eda_korelacie_a_pocty_meteo_tabulka.png
+INPUT ./img/eda_korelacie_a_pocty_meteo_tabulka.png
+INPUT ./img/eda_korelacie_a_pocty_meteo_tabulka.png
+INPUT ./img/data_rozdelenie_trening_test_tabulka.png
+INPUT ./img/data_rozdelenie_trening_test_tabulka.png
+INPUT ./img/data_rozdelenie_trening_test_tabulka.png
+INPUT ./img/data_rozdelenie_trening_test_tabulka.png
+INPUT ./img/data_rozdelenie_trening_test_graf.png
+INPUT ./img/data_rozdelenie_trening_test_graf.png
+INPUT ./img/data_rozdelenie_trening_test_graf.png
+INPUT ./img/data_rozdelenie_trening_test_graf.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.34.14.png
-INPUT ./img/Screenshot 2026-10-29 at 10.34.14.png
-INPUT ./img/Screenshot 2026-10-29 at 10.34.14.png
-INPUT ./img/Screenshot 2026-10-29 at 10.34.14.png
-INPUT ./img/Screenshot 2026-10-29 at 10.35.43.png
-INPUT ./img/Screenshot 2026-10-29 at 10.35.43.png
-INPUT ./img/Screenshot 2026-10-29 at 10.35.43.png
-INPUT ./img/Screenshot 2026-10-29 at 10.35.43.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx0600.tfm
+INPUT ./img/data_hranice_odlahlych_hodnot_tabulka.png
+INPUT ./img/data_hranice_odlahlych_hodnot_tabulka.png
+INPUT ./img/data_hranice_odlahlych_hodnot_tabulka.png
+INPUT ./img/data_hranice_odlahlych_hodnot_tabulka.png
+INPUT ./img/modely_porovnanie_cv_tabulka.png
+INPUT ./img/modely_porovnanie_cv_tabulka.png
+INPUT ./img/modely_porovnanie_cv_tabulka.png
+INPUT ./img/modely_porovnanie_cv_tabulka.png
+INPUT ./img/decision_tree_ladenie_tabulka.png
+INPUT ./img/decision_tree_ladenie_tabulka.png
+INPUT ./img/decision_tree_ladenie_tabulka.png
+INPUT ./img/decision_tree_ladenie_tabulka.png
+INPUT ./img/decision_tree_metriky_tabulka.png
+INPUT ./img/decision_tree_metriky_tabulka.png
+INPUT ./img/decision_tree_metriky_tabulka.png
+INPUT ./img/decision_tree_metriky_tabulka.png
+INPUT ./img/decision_tree_dolezitost_priznakov_graf.png
+INPUT ./img/decision_tree_dolezitost_priznakov_graf.png
+INPUT ./img/decision_tree_dolezitost_priznakov_graf.png
+INPUT ./img/decision_tree_dolezitost_priznakov_graf.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.36.28.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.28.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.28.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.28.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.48.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.48.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.48.png
-INPUT ./img/Screenshot 2026-10-29 at 10.36.48.png
-INPUT ./img/Screenshot 2026-10-29 at 10.39.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.39.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.39.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.39.41.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
+INPUT ./img/decision_tree_dolezitost_priznakov_tabulka.png
+INPUT ./img/decision_tree_dolezitost_priznakov_tabulka.png
+INPUT ./img/decision_tree_dolezitost_priznakov_tabulka.png
+INPUT ./img/decision_tree_dolezitost_priznakov_tabulka.png
+INPUT ./img/decision_tree_ilustracny_strom_graf.png
+INPUT ./img/decision_tree_ilustracny_strom_graf.png
+INPUT ./img/decision_tree_ilustracny_strom_graf.png
+INPUT ./img/decision_tree_ilustracny_strom_graf.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx0600.tfm
+INPUT ./img/random_forest_ladenie_tabulka.png
+INPUT ./img/random_forest_ladenie_tabulka.png
+INPUT ./img/random_forest_ladenie_tabulka.png
+INPUT ./img/random_forest_ladenie_tabulka.png
+INPUT ./img/random_forest_metriky_tabulka.png
+INPUT ./img/random_forest_metriky_tabulka.png
+INPUT ./img/random_forest_metriky_tabulka.png
+INPUT ./img/random_forest_metriky_tabulka.png
+INPUT ./img/random_forest_permutacna_dolezitost_graf.png
+INPUT ./img/random_forest_permutacna_dolezitost_graf.png
+INPUT ./img/random_forest_permutacna_dolezitost_graf.png
+INPUT ./img/random_forest_permutacna_dolezitost_graf.png
+INPUT ./img/random_forest_dolezitost_priznakov_tabulka.png
+INPUT ./img/random_forest_dolezitost_priznakov_tabulka.png
+INPUT ./img/random_forest_dolezitost_priznakov_tabulka.png
+INPUT ./img/random_forest_dolezitost_priznakov_tabulka.png
+INPUT ./img/random_forest_vybrane_stromy_graf.png
+INPUT ./img/random_forest_vybrane_stromy_graf.png
+INPUT ./img/random_forest_vybrane_stromy_graf.png
+INPUT ./img/random_forest_vybrane_stromy_graf.png
+INPUT ./img/random_forest_vybrane_stromy_tabulka.png
+INPUT ./img/random_forest_vybrane_stromy_tabulka.png
+INPUT ./img/random_forest_vybrane_stromy_tabulka.png
+INPUT ./img/random_forest_vybrane_stromy_tabulka.png
+INPUT ./img/extra_trees_ladenie_tabulka.png
+INPUT ./img/extra_trees_ladenie_tabulka.png
+INPUT ./img/extra_trees_ladenie_tabulka.png
+INPUT ./img/extra_trees_ladenie_tabulka.png
+INPUT ./img/extra_trees_metriky_tabulka.png
+INPUT ./img/extra_trees_metriky_tabulka.png
+INPUT ./img/extra_trees_metriky_tabulka.png
+INPUT ./img/extra_trees_metriky_tabulka.png
+INPUT ./img/extra_trees_dolezitost_priznakov_tabulka.png
+INPUT ./img/extra_trees_dolezitost_priznakov_tabulka.png
+INPUT ./img/extra_trees_dolezitost_priznakov_tabulka.png
+INPUT ./img/extra_trees_dolezitost_priznakov_tabulka.png
+INPUT ./img/xgboost_ladenie_tabulka.png
+INPUT ./img/xgboost_ladenie_tabulka.png
+INPUT ./img/xgboost_ladenie_tabulka.png
+INPUT ./img/xgboost_ladenie_tabulka.png
+INPUT ./img/xgboost_metriky_tabulka.png
+INPUT ./img/xgboost_metriky_tabulka.png
+INPUT ./img/xgboost_metriky_tabulka.png
+INPUT ./img/xgboost_metriky_tabulka.png
+INPUT ./img/xgboost_dolezitost_priznakov_tabulka.png
+INPUT ./img/xgboost_dolezitost_priznakov_tabulka.png
+INPUT ./img/xgboost_dolezitost_priznakov_tabulka.png
+INPUT ./img/xgboost_dolezitost_priznakov_tabulka.png
+INPUT ./img/hist_gradient_boosting_ladenie_tabulka.png
+INPUT ./img/hist_gradient_boosting_ladenie_tabulka.png
+INPUT ./img/hist_gradient_boosting_ladenie_tabulka.png
+INPUT ./img/hist_gradient_boosting_ladenie_tabulka.png
+INPUT ./img/hist_gradient_boosting_metriky_tabulka.png
+INPUT ./img/hist_gradient_boosting_metriky_tabulka.png
+INPUT ./img/hist_gradient_boosting_metriky_tabulka.png
+INPUT ./img/hist_gradient_boosting_metriky_tabulka.png
+INPUT ./img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png
+INPUT ./img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png
+INPUT ./img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png
+INPUT ./img/hist_gradient_boosting_permutacna_dolezitost_tabulka.png
+INPUT ./img/svr_ladenie_tabulka.png
+INPUT ./img/svr_ladenie_tabulka.png
+INPUT ./img/svr_ladenie_tabulka.png
+INPUT ./img/svr_ladenie_tabulka.png
+INPUT ./img/svr_metriky_tabulka.png
+INPUT ./img/svr_metriky_tabulka.png
+INPUT ./img/svr_metriky_tabulka.png
+INPUT ./img/svr_metriky_tabulka.png
+INPUT ./img/svr_permutacna_dolezitost_tabulka.png
+INPUT ./img/svr_permutacna_dolezitost_tabulka.png
+INPUT ./img/svr_permutacna_dolezitost_tabulka.png
+INPUT ./img/svr_permutacna_dolezitost_tabulka.png
+INPUT ./img/modely_porovnanie_metrik_tabulka.png
+INPUT ./img/modely_porovnanie_metrik_tabulka.png
+INPUT ./img/modely_porovnanie_metrik_tabulka.png
+INPUT ./img/modely_porovnanie_metrik_tabulka.png
+INPUT ./img/modely_porovnanie_metrik_graf.png
+INPUT ./img/modely_porovnanie_metrik_graf.png
+INPUT ./img/modely_porovnanie_metrik_graf.png
+INPUT ./img/modely_porovnanie_metrik_graf.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
@@ -220,78 +318,126 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT ./img/Screenshot 2026-10-29 at 10.40.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.40.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.40.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.40.41.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.01.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.01.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.01.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.01.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.23.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.23.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.23.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.23.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.41.37.png
-INPUT ./img/Screenshot 2026-10-29 at 10.43.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.43.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.43.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.43.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.44.57.png
-INPUT ./img/Screenshot 2026-10-29 at 10.44.57.png
-INPUT ./img/Screenshot 2026-10-29 at 10.44.57.png
-INPUT ./img/Screenshot 2026-10-29 at 10.44.57.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.45.47.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.05.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.05.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.05.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.05.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.30.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.30.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.30.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.30.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.53.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.53.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.53.png
-INPUT ./img/Screenshot 2026-10-29 at 10.46.53.png
-INPUT ./img/Screenshot 2026-10-29 at 10.48.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.48.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.48.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.48.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.15.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.15.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.15.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.15.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.40.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.49.59.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.16.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.27.png
-INPUT ./img/Screenshot 2026-10-29 at 10.50.27.png
+INPUT ./img/modely_rezidualy_graf.png
+INPUT ./img/modely_rezidualy_graf.png
+INPUT ./img/modely_rezidualy_graf.png
+INPUT ./img/modely_rezidualy_graf.png
+INPUT ./img/modely_rezidualy_tabulka.png
+INPUT ./img/modely_rezidualy_tabulka.png
+INPUT ./img/modely_rezidualy_tabulka.png
+INPUT ./img/modely_rezidualy_tabulka.png
+INPUT ./img/modely_rezidualy_a_chyby_podla_co_graf.png
+INPUT ./img/modely_rezidualy_a_chyby_podla_co_graf.png
+INPUT ./img/modely_rezidualy_a_chyby_podla_co_graf.png
+INPUT ./img/modely_rezidualy_a_chyby_podla_co_graf.png
+INPUT ./img/svr_rezidualy_podla_co_a_casu_graf.png
+INPUT ./img/svr_rezidualy_podla_co_a_casu_graf.png
+INPUT ./img/svr_rezidualy_podla_co_a_casu_graf.png
+INPUT ./img/svr_rezidualy_podla_co_a_casu_graf.png
+INPUT ./img/pca_povodne_senzory_boxploty_a_statistika.png
+INPUT ./img/pca_povodne_senzory_boxploty_a_statistika.png
+INPUT ./img/pca_povodne_senzory_boxploty_a_statistika.png
+INPUT ./img/pca_povodne_senzory_boxploty_a_statistika.png
+INPUT ./img/pca_povodne_senzory_3d_graf.png
+INPUT ./img/pca_povodne_senzory_3d_graf.png
+INPUT ./img/pca_povodne_senzory_3d_graf.png
+INPUT ./img/pca_povodne_senzory_3d_graf.png
+INPUT ./img/pca_projekcia_3d_graf.png
+INPUT ./img/pca_projekcia_3d_graf.png
+INPUT ./img/pca_projekcia_3d_graf.png
+INPUT ./img/pca_projekcia_3d_graf.png
+INPUT ./img/pca_senzory_a_komponenty_boxploty.png
+INPUT ./img/pca_senzory_a_komponenty_boxploty.png
+INPUT ./img/pca_senzory_a_komponenty_boxploty.png
+INPUT ./img/pca_senzory_a_komponenty_boxploty.png
+INPUT ./img/pca_statistika_komponentov_tabulka.png
+INPUT ./img/pca_statistika_komponentov_tabulka.png
+INPUT ./img/pca_statistika_komponentov_tabulka.png
+INPUT ./img/pca_statistika_komponentov_tabulka.png
+INPUT ./img/redukcia_vyber_podla_korelacie_graf.png
+INPUT ./img/redukcia_vyber_podla_korelacie_graf.png
+INPUT ./img/redukcia_vyber_podla_korelacie_graf.png
+INPUT ./img/redukcia_vyber_podla_korelacie_graf.png
+INPUT ./img/redukcia_vyber_podla_rf_graf.png
+INPUT ./img/redukcia_vyber_podla_rf_graf.png
+INPUT ./img/redukcia_vyber_podla_rf_graf.png
+INPUT ./img/redukcia_vyber_podla_rf_graf.png
+INPUT ./img/redukcia_vyber_podla_rf_tabulka.png
+INPUT ./img/redukcia_vyber_podla_rf_tabulka.png
+INPUT ./img/redukcia_vyber_podla_rf_tabulka.png
+INPUT ./img/redukcia_vyber_podla_rf_tabulka.png
+INPUT ./img/pca_vyber_prahu_variancie_graf.png
+INPUT ./img/pca_vyber_prahu_variancie_graf.png
+INPUT ./img/pca_vyber_prahu_variancie_graf.png
+INPUT ./img/pca_vyber_prahu_variancie_graf.png
+INPUT ./img/pca_vyber_prahu_variancie_tabulka.png
+INPUT ./img/pca_vyber_prahu_variancie_tabulka.png
+INPUT ./img/pca_vyber_prahu_variancie_tabulka.png
+INPUT ./img/pca_vyber_prahu_variancie_tabulka.png
+INPUT ./img/redukcia_porovnanie_strategii.png
+INPUT ./img/redukcia_porovnanie_strategii.png
+INPUT ./img/redukcia_porovnanie_strategii.png
+INPUT ./img/redukcia_porovnanie_strategii.png
+INPUT ./img/redukcia_rezidualy_graf.png
+INPUT ./img/redukcia_rezidualy_graf.png
+INPUT ./img/redukcia_rezidualy_graf.png
+INPUT ./img/redukcia_rezidualy_graf.png
+INPUT ./img/redukcia_rezidualy_tabulka.png
+INPUT ./img/redukcia_rezidualy_tabulka.png
+INPUT ./img/redukcia_rezidualy_tabulka.png
+INPUT ./img/redukcia_rezidualy_tabulka.png
+INPUT ./img/kmeans_vyber_poctu_zhlukov.png
+INPUT ./img/kmeans_vyber_poctu_zhlukov.png
+INPUT ./img/kmeans_vyber_poctu_zhlukov.png
+INPUT ./img/kmeans_vyber_poctu_zhlukov.png
+INPUT ./img/kmeans_laktova_metoda_graf.png
+INPUT ./img/kmeans_laktova_metoda_graf.png
+INPUT ./img/kmeans_laktova_metoda_graf.png
+INPUT ./img/kmeans_laktova_metoda_graf.png
+INPUT ./img/kmeans_zhluky_viac_pohladov_graf.png
+INPUT ./img/kmeans_zhluky_viac_pohladov_graf.png
+INPUT ./img/kmeans_zhluky_viac_pohladov_graf.png
+INPUT ./img/kmeans_zhluky_viac_pohladov_graf.png
+INPUT ./img/kmeans_priebeh_iteracii_graf.png
+INPUT ./img/kmeans_priebeh_iteracii_graf.png
+INPUT ./img/kmeans_priebeh_iteracii_graf.png
+INPUT ./img/kmeans_priebeh_iteracii_graf.png
+INPUT ./img/kmeans_zhluky_3d_graf.png
+INPUT ./img/kmeans_zhluky_3d_graf.png
+INPUT ./img/kmeans_zhluky_3d_graf.png
+INPUT ./img/kmeans_zhluky_3d_graf.png
+INPUT ./img/kmeans_profily_zhlukov_graf.png
+INPUT ./img/kmeans_profily_zhlukov_graf.png
+INPUT ./img/kmeans_profily_zhlukov_graf.png
+INPUT ./img/kmeans_profily_zhlukov_graf.png
+INPUT ./img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png
+INPUT ./img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png
+INPUT ./img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png
+INPUT ./img/kmeans_rozptyl_zhlukov_v_3d_tabulka.png
+INPUT ./img/lokalne_modely_porovnanie_metrik_tabulka.png
+INPUT ./img/lokalne_modely_porovnanie_metrik_tabulka.png
+INPUT ./img/lokalne_modely_porovnanie_metrik_tabulka.png
+INPUT ./img/lokalne_modely_porovnanie_metrik_tabulka.png
+INPUT ./img/lokalne_modely_porovnanie_rmse_graf.png
+INPUT ./img/lokalne_modely_porovnanie_rmse_graf.png
+INPUT ./img/lokalne_modely_porovnanie_rmse_graf.png
+INPUT ./img/lokalne_modely_porovnanie_rmse_graf.png
+INPUT ./img/lokalne_modely_rezidualy_graf.png
+INPUT ./img/lokalne_modely_rezidualy_graf.png
+INPUT ./img/lokalne_modely_rezidualy_graf.png
+INPUT ./img/lokalne_modely_rezidualy_graf.png
+INPUT ./img/neuronova_siet_metriky_tabulka.png
+INPUT ./img/neuronova_siet_metriky_tabulka.png
+INPUT ./img/neuronova_siet_metriky_tabulka.png
+INPUT ./img/neuronova_siet_metriky_tabulka.png
+INPUT ./img/neuronova_siet_krivky_ucenia_graf.png
+INPUT ./img/neuronova_siet_krivky_ucenia_graf.png
+INPUT ./img/neuronova_siet_krivky_ucenia_graf.png
+INPUT ./img/neuronova_siet_krivky_ucenia_graf.png
+INPUT ./img/neuronova_siet_rezidualy.png
+INPUT ./img/neuronova_siet_rezidualy.png
+INPUT ./img/neuronova_siet_rezidualy.png
+INPUT ./img/neuronova_siet_rezidualy.png
 INPUT dokumentacia.aux
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
@@ -303,13 +449,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
