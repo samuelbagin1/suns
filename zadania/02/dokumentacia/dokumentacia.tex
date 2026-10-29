@@ -51,7 +51,7 @@ Odstraňujem riadky s NA, a nerobím imputáciu. Duplicity skontrolujem ešte pr
 Dataset obsahuje \textbf{150 úplných duplicít}, bez identifikátora je ich 150. Cieľ chýba v \textbf{1716 riadkoch}. Spoločné vzory chýbania senzorov naznačujú výpadky merania.
 
 \begin{center}
-\includegraphics[width=0.70\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.31.51.png}
+\includegraphics[width=0.70\linewidth,keepaspectratio]{data_cistenie_tabulka.png}
 \end{center}
 
 % main.ipynb: bunka 10
@@ -66,7 +66,7 @@ Po čistení zostalo \textbf{7,344 úplných a platných meraní} (77.2\% pôvod
 \subsection{Rozdelenia senzorov a koncentrácie}
 
 \begin{center}
-\includegraphics[width=0.72\linewidth,keepaspectratio,height=0.40\textheight]{Screenshot 2026-10-29 at 10.32.24.png}
+\includegraphics[width=0.72\linewidth,keepaspectratio,height=0.40\textheight]{eda_histogramy_a_boxploty_graf.png}
 \end{center}
 
 % main.ipynb: bunka 16
@@ -76,7 +76,7 @@ CO má medián \textbf{1.80 \(\mathrm{mg}/\mathrm{m}^3\)}, priemer 2.13 \(\mathr
 \subsection{Súvislosti a časový priebeh}
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.32.41.png}
+\includegraphics[width=\linewidth,keepaspectratio]{eda_korelacie_a_casovy_priebeh_graf.png}
 \end{center}
 
 % main.ipynb: bunka 19
@@ -87,7 +87,7 @@ Najsilnejšiu absolútnu Pearsonovu koreláciu s CO má \textbf{sensor\_nmhc}, \
 \subsection{Hodinový priebeh CO v pracovných dňoch a cez víkend}
 
 \begin{center}
-\includegraphics[width=0.84\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.32.52.png}
+\includegraphics[width=0.84\linewidth,keepaspectratio]{eda_co_pracovne_dni_a_vikend_graf.png}
 \end{center}
 
 % main.ipynb: bunka 22
@@ -96,7 +96,7 @@ Pracovné dni majú priemerné CO \textbf{2.333 mg/m³}, víkend \textbf{1.658 m
 \subsection{Teplota, vlhkosť a koncentrácia CO}
 
 \begin{center}
-\includegraphics[width=0.84\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.33.20.png}
+\includegraphics[width=0.84\linewidth,keepaspectratio]{eda_co_teplota_a_vlhkost_graf.png}
 \end{center}
 
 % main.ipynb: bunka 25
@@ -180,8 +180,8 @@ Použijem jedno rozdelenie \textbf{80 \% tréning / 20 \% test}. Tréning zahŕ�
 Tréning obsahuje \textbf{5875} a test \textbf{1469} meraní. Rozdelenie je náhodné bez stratifikácie regresného cieľa.
 
 \begin{center}
-\includegraphics[width=0.39\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.33.37.png}\hfill
-\includegraphics[width=0.58\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.33.47.png}
+\includegraphics[width=0.39\linewidth,keepaspectratio]{data_rozdelenie_trening_test_tabulka.png}\hfill
+\includegraphics[width=0.58\linewidth,keepaspectratio]{data_rozdelenie_trening_test_graf.png}
 \end{center}
 
 % main.ipynb: bunka 31
@@ -237,7 +237,7 @@ Pri strome ladím hĺbku a minimálny počet vzoriek v liste. Random Forest prie
 Pri 3-fold CV sa každá konfigurácia trénuje trikrát na dvoch foldoch a hodnotí na zostávajúcom.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.34.14.png}
+\includegraphics[width=\linewidth,keepaspectratio]{modely_porovnanie_cv_tabulka.png}
 \end{center}
 
 % main.ipynb: bunka 37
@@ -311,7 +311,7 @@ Najvyššiu natívnu dôležitosť modelu \textbf{DecisionTree} má \textbf{sens
 Pre čitateľnosť natrénujem samostatný ilustračný strom s hĺbkou 3 a minimálne 30 meraniami v liste. Použijem sedem pôvodných spojitých vstupov bez škálovania, aby prahy mali zrozumiteľné jednotky. Jeho parametre a výsledok sú odlíšené od ladeného stromu. V liste \texttt{value} znamená priemerné CO a \texttt{squared\_\allowbreak{}error} priemernú štvorcovú odchýlku cieľa v danom uzle.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.35.43.png}
+\includegraphics[width=\linewidth,keepaspectratio]{decision_tree_ilustracny_strom_graf.png}
 \end{center}
 
 % main.ipynb: bunka 52
@@ -402,7 +402,7 @@ Poradie & Príznak & \shortstack{Feature\\importance} \\
 Les obsahuje \textbf{200 stromov}.
 
 \begin{center}
-\includegraphics[width=0.85\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.36.28.png}
+\includegraphics[width=0.85\linewidth,keepaspectratio]{random_forest_permutacna_dolezitost_graf.png}
 \end{center}
 
 % main.ipynb: bunka 61
@@ -416,7 +416,7 @@ Po premiešaní \textbf{sensor\_nmhc} klesne testovacie R² modelu \textbf{Rando
 Zobrazím tri skutočné stromy lesa. Každý obrázok ukazuje výrez do hĺbky 3, \texttt{(...)} označuje pokračovanie. Prahy sú v štandardizovaných jednotkách z. Číslo stromu je jeho poradie v lese, nie poradie kvality. Predikcia lesa je priemer predikcií všetkých 200 stromov.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio,height=0.68\textheight]{Screenshot 2026-10-29 at 10.36.48.png}
+\includegraphics[width=\linewidth,keepaspectratio,height=0.68\textheight]{random_forest_vybrane_stromy_graf.png}
 \end{center}
 
 \begin{center}
@@ -701,7 +701,7 @@ Po premiešaní \textbf{sensor\_nmhc} klesne testovacie R² modelu \textbf{SVR} 
 Všetky modely predikujú rovnakých 1 469 testovacích meraní.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.39.41.png}
+\includegraphics[width=\linewidth,keepaspectratio]{modely_porovnanie_metrik_tabulka.png}
 \end{center}
 
 % main.ipynb: bunka 105
@@ -718,7 +718,7 @@ CV víťaz \textbf{SVR} dosiahol na teste \textbf{\(R^2 = 0.9543\)}, \(\mathrm{R
 Na zvislej osi bodových grafov je \textbf{reziduál} (skutočná hodnota - predikovaná hodnota), nie očakávaná koncentrácia. Ideálne body tvoria pás okolo nuly bez krivky či lievika. Histogram porovnáva chyby v tréningu a teste. Všetky modely kreslím s rovnakou mierkou reziduálov, aby porovnanie neskreslili osi.
 
 \begin{center}
-\includegraphics[width=0.84\linewidth,keepaspectratio,height=0.77\textheight]{Screenshot 2026-10-29 at 10.40.41.png}
+\includegraphics[width=0.84\linewidth,keepaspectratio,height=0.77\textheight]{modely_rezidualy_graf.png}
 \end{center}
 
 % main.ipynb: bunka 113
@@ -752,14 +752,14 @@ HistGradientBoosting & 0.0033 & 0.0028 & 0.7279 & 0.3460 \\
 Boxplot porovná rozdelenia testovacích reziduálov. Pásma CO určím podľa tréningových kvartilov. Testové merania ich nemenia. Pri každom pásme uvediem počet testovacích bodov.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.41.01.png}
+\includegraphics[width=\linewidth,keepaspectratio]{modely_rezidualy_a_chyby_podla_co_graf.png}
 \end{center}
 
 % main.ipynb: bunka 116
 Pri modeli \textbf{SVR} je MAE v najnižšom pásme CO \textbf{0.1216 mg/m³}, v najvyššom \textbf{0.3256 mg/m³}. Najvyššie pásmo obsahuje \textbf{385} testovacích meraní a jeho priemerný reziduál je \textbf{0.0716 mg/m³}. Boxplot dopĺňa súhrnné metriky: posun mediánu ukazuje systematickú chybu, široký box a dlhé fúzy väčšie rozptýlenie reziduálov. Extrémne body ostávajú súčasťou hodnotenia.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.41.23.png}
+\includegraphics[width=\linewidth,keepaspectratio]{svr_rezidualy_podla_co_a_casu_graf.png}
 \end{center}
 
 % main.ipynb: bunka 118
@@ -786,8 +786,8 @@ Vyberám \texttt{sensor\_\allowbreak{}co}, \texttt{sensor\_\allowbreak{}nmhc} a 
 Kódovanie, štandardizáciu a PCA učím iba na tréningových inlieroch. Transformácia prevádza 17 vstupných stĺpcov na PC1, PC2 a PC3. Rovnaké parametre následne transformujú test. Cieľ sa do PCA nedostane.
 
 \begin{center}
-\includegraphics[width=0.49\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.41.37.png}\hfill
-\includegraphics[width=0.49\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.43.16.png}
+\includegraphics[width=0.49\linewidth,keepaspectratio]{pca_povodne_senzory_3d_graf.png}\hfill
+\includegraphics[width=0.49\linewidth,keepaspectratio]{pca_projekcia_3d_graf.png}
 \end{center}
 
 % main.ipynb: bunka 124
@@ -811,7 +811,7 @@ Používam rovnaký typ a hyperparametre modelu vybraného v prvej časti podľa
 Zoradím vstupy podľa absolútnej Pearsonovej korelácie s CO a vynechám príznaky s absolútnou koreláciou aspoň 0,95 s už vybraným vstupom. CV vyberá najviac 4 alebo 8 príznakov. Heatmapa nižšie je opis finálneho tréningového výberu, nie podklad na výber podľa testu.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio,height=0.30\textheight]{Screenshot 2026-10-29 at 10.44.57.png}
+\includegraphics[width=\linewidth,keepaspectratio,height=0.30\textheight]{redukcia_vyber_podla_korelacie_graf.png}
 \end{center}
 
 % main.ipynb: bunka 141
@@ -824,7 +824,7 @@ Zoradím vstupy podľa absolútnej Pearsonovej korelácie s CO a vynechám príz
 Pomocný Random Forest sa učí v každom CV folde od začiatku. CV vyberá 4 alebo 8 vstupov podľa jeho natívnych dôležitostí. Finálny graf ukazuje tréningový rebríček, farebne odlišuje ponechané a vynechané vstupy.
 
 \begin{center}
-\includegraphics[width=0.70\linewidth,keepaspectratio,height=0.22\textheight]{Screenshot 2026-10-29 at 10.45.27.png}
+\includegraphics[width=0.70\linewidth,keepaspectratio,height=0.22\textheight]{redukcia_vyber_podla_rf_graf.png}
 \end{center}
 
 % main.ipynb: bunka 144
@@ -839,7 +839,7 @@ Pomocný Random Forest sa učí v každom CV folde od začiatku. CV vyberá 4 al
 PCA skúša hranice vysvetlenej variability 90 \%, 95 \% a 99 \%. Počet komponentov vyplynie z dát. Ide o inú úlohu než pevné tri komponenty pre 3D zobrazenie. Zachovanie 99 \% rozptylu vstupov neznamená zachovanie 99 \% informácie o CO.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.45.47.png}
+\includegraphics[width=\linewidth,keepaspectratio]{pca_vyber_prahu_variancie_graf.png}
 \end{center}
 
 % main.ipynb: bunka 130
@@ -855,7 +855,7 @@ PCA skúša hranice vysvetlenej variability 90 \%, 95 \% a 99 \%. Počet kompone
 Porovnám pôvodný model a všetky tri stratégie na totožných testovacích meraniach. Okrem výsledných chýb sledujem aj počet vstupov a reziduály.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.46.05.png}
+\includegraphics[width=\linewidth,keepaspectratio]{redukcia_porovnanie_strategii.png}
 \end{center}
 
 % main.ipynb: bunka 148
@@ -870,11 +870,11 @@ V tomto experimente PCA s hranicou 99 \% ponechalo 13 komponentov a skutočne za
 Rovnaké testovacie riadky a spoločné osi umožňujú porovnať, či redukcia zväčšuje rozptyl alebo podhodnotenie pri vysokom CO. Korelačný výber zachytáva lineárny vzťah s cieľom, ensemble aj nelinearity, PCA predovšetkým veľké smery variability. Preto ich poradie podľa zachovanej variability nemusí súhlasiť s poradím predikčnej chyby.
 
 \begin{center}
-\includegraphics[width=0.91\linewidth,keepaspectratio,height=0.66\textheight]{Screenshot 2026-10-29 at 10.46.30.png}
+\includegraphics[width=0.91\linewidth,keepaspectratio,height=0.66\textheight]{redukcia_rezidualy_graf.png}
 \end{center}
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio,height=0.17\textheight]{Screenshot 2026-10-29 at 10.46.40.png}
+\includegraphics[width=\linewidth,keepaspectratio,height=0.17\textheight]{redukcia_rezidualy_tabulka.png}
 \end{center}
 
 \newpage
@@ -892,11 +892,11 @@ K-means naučím na \textbf{všetkých 17 štandardizovaných vstupoch}, bez CO 
 Vybral som \textbf{4 zhluky} so silhouette \textbf{0.252}. Hodnota blízko nule by znamenala slabé oddelenie, blízko jednej kompaktné oddelené skupiny. Profily ukazujú mediány pôvodných senzorov a počasia. Čísla zhlukov sú ľubovoľné označenia, nie triedy zdravotnej bezpečnosti a ani intervaly CO. Cieľ sa pri ich vytváraní nepoužil.
 
 \begin{center}
-\includegraphics[width=0.66\linewidth,keepaspectratio,height=0.38\textheight]{Screenshot 2026-10-29 at 10.46.53.png}
+\includegraphics[width=0.66\linewidth,keepaspectratio,height=0.38\textheight]{kmeans_zhluky_3d_graf.png}
 \end{center}
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.48.59.png}
+\includegraphics[width=\linewidth,keepaspectratio]{kmeans_profily_zhlukov_graf.png}
 \end{center}
 
 % main.ipynb: bunka 170
@@ -913,11 +913,11 @@ Zhluky predstavujú režimy merania, nie automaticky úrovne zdravotného rizika
 Pre každý zhluk natrénujem model \textbf{rovnakého typu a s rovnakými hyperparametrami} ako CV víťaz prvej časti. Predspracovanie a pravidlo outlierov sa znovu učia len z tréningových bodov daného zhluku. Testovací bod priradí do zhluku tréningový škálovač a K-means. Potom dostane predikciu príslušného lokálneho modelu. Na porovnanie vypočítam aj chybu pôvodného globálneho modelu na presne tých istých bodoch každého zhluku. \(R^2\) v podskupine môže klesnúť aj pre menší rozsah CO. Rozhodujúce je tiež spoločné MSE všetkých bodov.
 
 \begin{center}
-\includegraphics[width=0.72\linewidth,keepaspectratio,height=0.42\textheight]{Screenshot 2026-10-29 at 10.49.15.png}
+\includegraphics[width=0.72\linewidth,keepaspectratio,height=0.42\textheight]{lokalne_modely_porovnanie_metrik_tabulka.png}
 \end{center}
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.49.40.png}
+\includegraphics[width=\linewidth,keepaspectratio]{lokalne_modely_porovnanie_rmse_graf.png}
 \end{center}
 
 % main.ipynb: bunka 173
@@ -941,15 +941,15 @@ Sieť má jeden \textbf{lineárny výstup koncentrácie}, bez sigmoidy a bez tri
 Víťazná sieť má skryté vrstvy \textbf{1028 → 256 → 128}, aktiváciu \textbf{RELU} a learning rate \textbf{0.001}. CV RMSE je \textbf{0.3430 \(\mathrm{mg}/\mathrm{m}^3\)}, finálne testovacie \(R^2\) \textbf{0.9544} a RMSE \textbf{0.3072 \(\mathrm{mg}/\mathrm{m}^3\)}. Tréningové \(R^2\) je 0.9862. Výsledok vychádza z CV výberu, nie z výberu najlepšej siete podľa testu. Väčšia architektúra automaticky neznamená lepšiu generalizáciu, najmä na niekoľkých tisícoch meraní.
 
 \begin{center}
-\includegraphics[width=0.37\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.49.59.png}\hfill
-\includegraphics[width=0.60\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.50.16.png}
+\includegraphics[width=0.37\linewidth,keepaspectratio]{neuronova_siet_metriky_tabulka.png}\hfill
+\includegraphics[width=0.60\linewidth,keepaspectratio]{neuronova_siet_krivky_ucenia_graf.png}
 \end{center}
 
 % main.ipynb: bunka 183
 Early stopping vybral \textbf{92. epochu} z 100 vykonaných. V nej bola vnútorná tréningová MSE 0.0255 a validačná MSE 0.0783. Finálna sieť sa potom učila od začiatku na všetkých tréningových inlieroch. Jej testovacie metriky preto nemusia zodpovedať minimu tejto vnútornej krivky.
 
 \begin{center}
-\includegraphics[width=\linewidth,keepaspectratio]{Screenshot 2026-10-29 at 10.50.27.png}
+\includegraphics[width=\linewidth,keepaspectratio]{neuronova_siet_rezidualy.png}
 \end{center}
 
 % main.ipynb: bunka 185
