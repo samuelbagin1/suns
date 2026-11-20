@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="480" viewBox="0 0 1760 480" role="img" aria-labelledby="title description">
+  <title id="title">Architektúra TinyViT pre odhad kalórií</title>
+  <desc id="description">Široký prehľad modelu TinyViT. Normalizovaná RGB fotka sa rozdelí na 36 výrezov. Každý výrez sa premietne do 64-rozmerného tokenu. Po pridaní CLS a pozičných vektorov sekvencia prejde tromi blokmi Transformeru so štyrmi hlavami. Regresná hlava spracuje výsledný CLS a predikuje energiu v kcal.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5.6" refY="3" orient="auto" viewBox="0 0 6 6">
+      <path d="M1 1 5.5 3 1 5" fill="none" stroke="#556471" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #1d2839; }
+      .title { font-size: 38px; font-weight: 700; letter-spacing: -.7px; }
+      .subtitle { font-size: 19px; fill: #536277; }
+      .stage { font-size: 19px; font-weight: 700; }
+      .detail { font-size: 16px; fill: #4c5d70; }
+      .operator { font-size: 15px; font-weight: 600; fill: #40526a; }
+      .dimension { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+      .small { font-size: 14px; font-weight: 600; fill: #40526a; }
+      .unit { font-size: 23px; font-weight: 700; }
+      .note { font-size: 17px; fill: #45546a; }
+      .note-label { font-size: 17px; font-weight: 700; }
+      .arrow { fill: none; stroke: #556471; stroke-width: 1.6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1760" height="480" rx="0" fill="#ffffff" stroke="none"/>
+  <text x="48" y="59" class="title" text-anchor="start">Vision Transformer</text>
+  <text x="49" y="92" class="subtitle" text-anchor="start">TinyViT · Odhad energie jedla z RGB snímky</text>
+  <path d="M48 111H1712" stroke="#dde5ed"/>
+  <rect x="48" y="128" width="178" height="245" rx="12" fill="#fbf8fd" stroke="#e0e8ee"/>
+  <text x="137.0" y="157" class="stage" text-anchor="middle">RGB vstup</text>
+  <text x="137.0" y="180" class="detail" text-anchor="middle">Normalizácia ImageNet</text>
+  <rect x="248" y="128" width="240" height="245" rx="12" fill="#f7f8fd" stroke="#e0e8ee"/>
+  <text x="368.0" y="157" class="stage" text-anchor="middle">Projekcia výrezov</text>
+  <text x="368.0" y="180" class="detail" text-anchor="middle">Conv2d · jadro 16 × 16 · krok 16</text>
+  <rect x="510" y="128" width="255" height="245" rx="12" fill="#f4f9fb" stroke="#e0e8ee"/>
+  <text x="637.5" y="157" class="stage" text-anchor="middle">Sekvencia tokenov</text>
+  <text x="637.5" y="180" class="detail" text-anchor="middle">Naučiteľný CLS a pozície</text>
+  <rect x="787" y="128" width="400" height="245" rx="12" fill="#f3faf8" stroke="#e0e8ee"/>
+  <text x="987.0" y="157" class="stage" text-anchor="middle">Enkóder Transformeru</text>
+  <text x="987.0" y="180" class="detail" text-anchor="middle">3 bloky · 4 hlavy v každom bloku</text>
+  <rect x="1209" y="128" width="316" height="245" rx="12" fill="#f7fbf4" stroke="#e0e8ee"/>
+  <text x="1367.0" y="157" class="stage" text-anchor="middle">Regresná hlava TinyViT</text>
+  <text x="1367.0" y="180" class="detail" text-anchor="middle">Spracuje výstupný token CLS</text>
+  <rect x="1547" y="128" width="165" height="245" rx="12" fill="#fffdf1" stroke="#e0e8ee"/>
+  <text x="1629.5" y="157" class="stage" text-anchor="middle">Výstup</text>
+  <text x="1629.5" y="180" class="detail" text-anchor="middle">Spätné škálovanie</text>
+  <path d="M228 247H245" class="arrow"/>
+  <path d="M490 247H507" class="arrow"/>
+  <path d="M767 247H784" class="arrow"/>
+  <path d="M1189 247H1206" class="arrow"/>
+  <path d="M1527 247H1544" class="arrow"/>
+  <g transform="translate(24 -3)" aria-label="RGB snímka jedla">
+    <rect x="82" y="202" width="81" height="81" rx="8" fill="#9883bd" opacity=".5"/>
+    <rect x="77" y="207" width="81" height="81" rx="8" fill="#cab9de" stroke="#776090"/>
+    <rect x="72" y="212" width="81" height="81" rx="8" fill="#49355d"/>
+    <circle cx="112.5" cy="252.5" r="31" fill="#e3dfeb"/>
+    <circle cx="112.5" cy="252.5" r="25" fill="#f8f4f0" stroke="#d3cbd8"/>
+    <path d="M94 250q-1-11 9-13 7-7 15 0 9-2 12 8 9 7 1 14-4 11-13 9-8 6-14-2-12-1-12-10Z" fill="#49874c"/>
+    <path d="M97 252q8-12 22-10l7 7-4 13-15 4Z" fill="#84ad59"/>
+    <path d="m103 245 8-4 8 5-4 6-9-1Zm15 10 8-3 3 5-5 7-8-3Z" fill="#eac480"/>
+    <circle cx="103" cy="257" r="4.5" fill="#d77566"/>
+    <circle cx="126" cy="244" r="3.9" fill="#d77566"/>
+    <circle cx="112" cy="264" r="3.4" fill="#d77566"/>
+  </g>
+  <text x="137" y="326" class="dimension" text-anchor="middle">96 × 96 × 3</text>
+  <text x="137" y="350" class="detail" text-anchor="middle">výška × šírka × kanály</text>
+  <rect x="270" y="203" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="284" y="203" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="298" y="203" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="312" y="203" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="326" y="203" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="340" y="203" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="270" y="217" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="284" y="217" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="298" y="217" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="312" y="217" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="326" y="217" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="340" y="217" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="270" y="231" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="284" y="231" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="298" y="231" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="312" y="231" width="14" height="14" rx="1" fill="#426892" stroke="#f8fbfd"/>
+  <rect x="326" y="231" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="340" y="231" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="270" y="245" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="284" y="245" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="298" y="245" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="312" y="245" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="326" y="245" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="340" y="245" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="270" y="259" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="284" y="259" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="298" y="259" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="312" y="259" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="326" y="259" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="340" y="259" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="270" y="273" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="284" y="273" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="298" y="273" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <rect x="312" y="273" width="14" height="14" rx="1" fill="#cbd9ea" stroke="#f8fbfd"/>
+  <rect x="326" y="273" width="14" height="14" rx="1" fill="#e5edf6" stroke="#f8fbfd"/>
+  <rect x="340" y="273" width="14" height="14" rx="1" fill="#dbe5f3" stroke="#f8fbfd"/>
+  <path d="M365 245H410" class="arrow"/>
+  <rect x="419" y="216" width="45" height="8" rx="2" fill="#9db6d4" stroke="none"/>
+  <rect x="419" y="228" width="45" height="8" rx="2" fill="#80a0c3" stroke="none"/>
+  <rect x="419" y="240" width="45" height="8" rx="2" fill="#c2d4e8" stroke="none"/>
+  <rect x="419" y="252" width="45" height="8" rx="2" fill="#6d91b5" stroke="none"/>
+  <rect x="419" y="264" width="45" height="8" rx="2" fill="#a8c0da" stroke="none"/>
+  <text x="312" y="307" class="small" text-anchor="middle">6 × 6</text>
+  <text x="442" y="307" class="small" text-anchor="middle">64 hodnôt</text>
+  <text x="368" y="330" class="dimension" text-anchor="middle">36 výrezov → 36 tokenov</text>
+  <text x="368" y="352" class="operator" text-anchor="middle">64 filtrov · 3 × 16 × 16 váh</text>
+  <rect x="532" y="199" width="42" height="19" rx="3" fill="#c7dfe7" stroke="#a9c4d1"/>
+  <text x="553" y="213" class="small" text-anchor="middle">CLS</text>
+  <rect x="584" y="200" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="599" y="200" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="614" y="200" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="629" y="200" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="644" y="200" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="659" y="200" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="674" y="200" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <text x="703" y="214" class="operator" text-anchor="middle">+</text>
+  <rect x="714" y="200" width="29" height="17" rx="3" fill="#e0e8f1" stroke="#bdcce0"/>
+  <text x="728.5" y="213" class="small" text-anchor="middle">poz.</text>
+  <rect x="532" y="223" width="42" height="19" rx="3" fill="#e6eff4" stroke="#a9c4d1"/>
+  <text x="553" y="237" class="small" text-anchor="middle">P1</text>
+  <rect x="584" y="224" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="599" y="224" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="614" y="224" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="629" y="224" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="644" y="224" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="659" y="224" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="674" y="224" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <text x="703" y="238" class="operator" text-anchor="middle">+</text>
+  <rect x="714" y="224" width="29" height="17" rx="3" fill="#e0e8f1" stroke="#bdcce0"/>
+  <text x="728.5" y="237" class="small" text-anchor="middle">poz.</text>
+  <rect x="532" y="247" width="42" height="19" rx="3" fill="#e6eff4" stroke="#a9c4d1"/>
+  <text x="553" y="261" class="small" text-anchor="middle">P2</text>
+  <rect x="584" y="248" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="599" y="248" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="614" y="248" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="629" y="248" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="644" y="248" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="659" y="248" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="674" y="248" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <text x="703" y="262" class="operator" text-anchor="middle">+</text>
+  <rect x="714" y="248" width="29" height="17" rx="3" fill="#e0e8f1" stroke="#bdcce0"/>
+  <text x="728.5" y="261" class="small" text-anchor="middle">poz.</text>
+  <rect x="532" y="282" width="42" height="19" rx="3" fill="#e6eff4" stroke="#a9c4d1"/>
+  <text x="553" y="296" class="small" text-anchor="middle">P36</text>
+  <rect x="584" y="283" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="599" y="283" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="614" y="283" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <rect x="629" y="283" width="13" height="17" rx="2" fill="#6e9cad" stroke="none"/>
+  <rect x="644" y="283" width="13" height="17" rx="2" fill="#87b3c2" stroke="none"/>
+  <rect x="659" y="283" width="13" height="17" rx="2" fill="#cfe3e9" stroke="none"/>
+  <rect x="674" y="283" width="13" height="17" rx="2" fill="#a2c3d1" stroke="none"/>
+  <text x="703" y="297" class="operator" text-anchor="middle">+</text>
+  <rect x="714" y="283" width="29" height="17" rx="3" fill="#e0e8f1" stroke="#bdcce0"/>
+  <text x="728.5" y="296" class="small" text-anchor="middle">poz.</text>
+  <text x="638" y="281" class="operator" text-anchor="middle">⋯</text>
+  <text x="637.5" y="330" class="dimension" text-anchor="middle">37 tokenov × 64 hodnôt</text>
+  <text x="637.5" y="352" class="operator" text-anchor="middle">1 CLS + 36 tokenov z výrezov</text>
+  <rect x="806" y="204" width="107" height="85" rx="7" fill="#e9f5f0" stroke="#a9cdbf"/>
+  <text x="859.5" y="226" class="operator" text-anchor="middle">Blok 1</text>
+  <rect x="820" y="238" width="15" height="17" rx="2" fill="#81b7a2" stroke="none"/>
+  <rect x="841" y="238" width="15" height="17" rx="2" fill="#529c86" stroke="none"/>
+  <rect x="862" y="238" width="15" height="17" rx="2" fill="#a0c9b7" stroke="none"/>
+  <rect x="883" y="238" width="15" height="17" rx="2" fill="#6cad96" stroke="none"/>
+  <text x="859.5" y="276" class="small" text-anchor="middle">MHA + MLP</text>
+  <path d="M915 246H930" class="arrow"/>
+  <rect x="933" y="204" width="107" height="85" rx="7" fill="#e9f5f0" stroke="#a9cdbf"/>
+  <text x="986.5" y="226" class="operator" text-anchor="middle">Blok 2</text>
+  <rect x="947" y="238" width="15" height="17" rx="2" fill="#81b7a2" stroke="none"/>
+  <rect x="968" y="238" width="15" height="17" rx="2" fill="#529c86" stroke="none"/>
+  <rect x="989" y="238" width="15" height="17" rx="2" fill="#a0c9b7" stroke="none"/>
+  <rect x="1010" y="238" width="15" height="17" rx="2" fill="#6cad96" stroke="none"/>
+  <text x="986.5" y="276" class="small" text-anchor="middle">MHA + MLP</text>
+  <path d="M1042 246H1057" class="arrow"/>
+  <rect x="1060" y="204" width="107" height="85" rx="7" fill="#e9f5f0" stroke="#a9cdbf"/>
+  <text x="1113.5" y="226" class="operator" text-anchor="middle">Blok 3</text>
+  <rect x="1074" y="238" width="15" height="17" rx="2" fill="#81b7a2" stroke="none"/>
+  <rect x="1095" y="238" width="15" height="17" rx="2" fill="#529c86" stroke="none"/>
+  <rect x="1116" y="238" width="15" height="17" rx="2" fill="#a0c9b7" stroke="none"/>
+  <rect x="1137" y="238" width="15" height="17" rx="2" fill="#6cad96" stroke="none"/>
+  <text x="1113.5" y="276" class="small" text-anchor="middle">MHA + MLP</text>
+  <text x="987" y="326" class="dimension" text-anchor="middle">37 × 64 → 37 × 64</text>
+  <text x="987" y="350" class="operator" text-anchor="middle">Každá hlava pracuje so 16 hodnotami na token</text>
+  <rect x="1231" y="225" width="53" height="43" rx="5" fill="#cee5d5" stroke="#85b599"/>
+  <text x="1257.5" y="251" class="operator" text-anchor="middle">CLS</text>
+  <path d="M1288 246H1307" class="arrow"/>
+  <rect x="1309" y="218" width="123" height="57" rx="6" fill="#e8f1e6" stroke="#abc8a9"/>
+  <text x="1370.5" y="242" class="operator" text-anchor="middle">LayerNorm</text>
+  <text x="1370.5" y="263" class="small" text-anchor="middle">Dropout → Linear</text>
+  <path d="M1435 246H1456" class="arrow"/>
+  <circle cx="1479" cy="246" r="18" fill="#92c58a" stroke="#548f56"/>
+  <text x="1479" y="252" class="dimension" text-anchor="middle">z</text>
+  <text x="1257.5" y="308" class="small" text-anchor="middle">64 hodnôt</text>
+  <text x="1479" y="308" class="small" text-anchor="middle">1 hodnota</text>
+  <text x="1367" y="345" class="dimension" text-anchor="middle">Štandardizovaný odhad</text>
+  <circle cx="1629.5" cy="246" r="38" fill="#ffe42c" stroke="#aa8a16" stroke-width="1.5"/>
+  <text x="1629.5" y="254" class="unit" text-anchor="middle">kcal</text>
+  <text x="1629.5" y="326" class="dimension" text-anchor="middle">1 odhad</text>
+  <text x="1629.5" y="350" class="detail" text-anchor="middle">energia jedla</text>
+  <path d="M48 395H1712" stroke="#dde5ed"/>
+  <path d="M937 410V461" stroke="#dde5ed"/>
+  <text x="48" y="427" class="note-label" text-anchor="start">Poradie v bloku</text>
+  <text x="213" y="427" class="note" text-anchor="start">LayerNorm → viachlavová self-attention (MHA) → reziduálne sčítanie</text>
+  <text x="213" y="454" class="note" text-anchor="start">LayerNorm → MLP (64 → 128 → 64) → reziduálne sčítanie</text>
+  <text x="966" y="427" class="note-label" text-anchor="start">CLS</text>
+  <text x="1115" y="427" class="note" text-anchor="start">Prvý token. Pozornosť doň prenáša informácie z výrezov.</text>
+  <text x="966" y="454" class="note-label" text-anchor="start">Prevod na kcal</text>
+  <text x="1115" y="454" class="note" text-anchor="start">z × smerodajná odchýlka kcal + priemer kcal</text>
+</svg>

@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="458" viewBox="0 0 1760 458" role="img" aria-labelledby="title description">
+  <title id="title">Konvolučná neurónová sieť pre odhad kalórií · C1</title>
+  <desc id="description">Normalizovaný RGB obrázok 96 × 96 × 3 prejde tromi blokmi Conv2d, BatchNorm2d, ReLU a MaxPool2d. Bloky používajú 16, 32 a 64 filtrov s priestorovým jadrom 3 × 3. Po poolingu majú mapy rozmery 48 × 48 × 16, 24 × 24 × 32 a 12 × 12 × 64. AdaptiveAvgPool2d vytvorí mriežku 3 × 3 × 64, ktorá sa sploští na 576 hodnôt. MLP hlava má 96 skrytých neurónov a jeden výstup. Spätný prevod dá odhad v kcal.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5.6" refY="3" orient="auto" viewBox="0 0 6 6">
+      <path d="M1 1 5.5 3 1 5" fill="none" stroke="#556471" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #1d2839; }
+      .title { font-size: 36px; font-weight: 700; letter-spacing: -0.7px; }
+      .subtitle { font-size: 17px; fill: #536277; }
+      .stage { font-size: 16px; font-weight: 700; }
+      .detail { font-size: 12.5px; fill: #4c5d70; }
+      .operator { font-size: 11.5px; font-weight: 600; fill: #40526a; }
+      .dimension { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+      .note { font-size: 14px; fill: #45546a; }
+      .note-label { font-size: 14px; font-weight: 700; }
+      .arrow { fill: none; stroke: #556471; stroke-width: 1.4; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1760" height="458" fill="#ffffff"/>
+  <text x="48" y="58" class="title">Konvolučná neurónová sieť</text>
+  <text x="49" y="90" class="subtitle">Základná konfigurácia C1 · Odhad energie jedla z RGB snímky</text>
+  <path d="M48 109H1712" stroke="#dde5ed"/>
+  <rect x="48" y="128" width="160" height="235" rx="12" fill="#fbf8fd" stroke="#e0e8ee"/>
+  <text x="128.0" y="154" class="stage" text-anchor="middle">RGB vstup</text>
+  <text x="128.0" y="174" class="detail" text-anchor="middle">Normalize</text>
+  <rect x="226" y="128" width="270" height="235" rx="12" fill="#f7f8fd" stroke="#e0e8ee"/>
+  <text x="361.0" y="154" class="stage" text-anchor="middle">Konvolučný blok 1</text>
+  <text x="361.0" y="173" class="operator" text-anchor="middle">Conv2d · channels 3 → 16</text>
+  <text x="361.0" y="190" class="detail" text-anchor="middle">Kernel 3 × 3 × 3 · stride 1 · pad 1</text>
+  <rect x="515" y="128" width="270" height="235" rx="12" fill="#f4f9fb" stroke="#e0e8ee"/>
+  <text x="650.0" y="154" class="stage" text-anchor="middle">Konvolučný blok 2</text>
+  <text x="650.0" y="173" class="operator" text-anchor="middle">Conv2d · channels 16 → 32</text>
+  <text x="650.0" y="190" class="detail" text-anchor="middle">Kernel 3 × 3 × 16 · stride 1 · pad 1</text>
+  <rect x="804" y="128" width="270" height="235" rx="12" fill="#f3faf8" stroke="#e0e8ee"/>
+  <text x="939.0" y="154" class="stage" text-anchor="middle">Konvolučný blok 3</text>
+  <text x="939.0" y="173" class="operator" text-anchor="middle">Conv2d · channels 32 → 64</text>
+  <text x="939.0" y="190" class="detail" text-anchor="middle">Kernel 3 × 3 × 32 · stride 1 · pad 1</text>
+  <rect x="1093" y="128" width="430" height="235" rx="12" fill="#f7fbf4" stroke="#e0e8ee"/>
+  <text x="1308.0" y="154" class="stage" text-anchor="middle">Regresná hlava CNN</text>
+  <text x="1308.0" y="174" class="detail" text-anchor="middle">AdaptiveAvgPool2d → MLP</text>
+  <rect x="1542" y="128" width="170" height="235" rx="12" fill="#fffdf1" stroke="#e0e8ee"/>
+  <text x="1627.0" y="154" class="stage" text-anchor="middle">Výstup</text>
+  <text x="1627.0" y="174" class="detail" text-anchor="middle">Inverse scaling</text>
+  <path d="M209 245H224" class="arrow"/>
+  <path d="M497 245H513" class="arrow"/>
+  <path d="M786 245H802" class="arrow"/>
+  <path d="M1075 245H1091" class="arrow"/>
+  <path d="M1524 245H1540" class="arrow"/>
+  <g transform="translate(15 0)" aria-label="RGB snímka jedla">
+    <rect x="82" y="202" width="81" height="81" rx="8" fill="#9883bd" opacity=".5"/>
+    <rect x="77" y="207" width="81" height="81" rx="8" fill="#cab9de" stroke="#776090"/>
+    <rect x="72" y="212" width="81" height="81" rx="8" fill="#49355d"/>
+    <circle cx="112.5" cy="252.5" r="31" fill="#e3dfeb"/>
+    <circle cx="112.5" cy="252.5" r="25" fill="#f8f4f0" stroke="#d3cbd8"/>
+    <path d="M94 250q-1-11 9-13 7-7 15 0 9-2 12 8 9 7 1 14-4 11-13 9-8 6-14-2-12-1-12-10Z" fill="#49874c"/>
+    <path d="M97 252q8-12 22-10l7 7-4 13-15 4Z" fill="#84ad59"/>
+    <path d="m103 245 8-4 8 5-4 6-9-1Zm15 10 8-3 3 5-5 7-8-3Z" fill="#eac480"/>
+    <circle cx="103" cy="257" r="4.5" fill="#d77566"/>
+    <circle cx="126" cy="244" r="3.9" fill="#d77566"/>
+    <circle cx="112" cy="264" r="3.4" fill="#d77566"/>
+  </g>
+  <text x="128" y="320" class="dimension" text-anchor="middle">96 × 96 × 3</text>
+  <text x="128" y="342" class="detail" text-anchor="middle">Výška × šírka × kanály</text>
+  <path d="M262.0 213.1 l72.0 -8 v64.0 l-72.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M258.0 216.6 l72.0 -8 v64.0 l-72.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M254.0 220.1 l72.0 -8 v64.0 l-72.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M250.0 223.6 l72.0 -8 v64.0 l-72.0 8 Z" fill="#f4f8fc" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="256.0" y="225.6" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.13"/>
+  <rect x="270.8" y="224.5" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.34"/>
+  <rect x="285.5" y="223.4" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.47"/>
+  <rect x="300.2" y="222.3" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.13"/>
+  <rect x="256.0" y="240.3" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.32"/>
+  <rect x="270.8" y="239.2" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.76"/>
+  <rect x="285.5" y="238.2" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.89"/>
+  <rect x="300.2" y="237.0" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.31"/>
+  <rect x="256.0" y="255.1" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.25"/>
+  <rect x="270.8" y="254.0" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.64"/>
+  <rect x="285.5" y="252.9" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.73"/>
+  <rect x="300.2" y="251.8" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.36"/>
+  <rect x="256.0" y="269.9" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.14"/>
+  <rect x="270.8" y="268.8" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.31"/>
+  <rect x="285.5" y="267.7" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.46"/>
+  <rect x="300.2" y="266.6" width="13.8" height="13.8" rx="1" fill="#7189ba" opacity="0.19"/>
+  <path d="M407.0 220.1 l58.0 -8 v50.0 l-58.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M403.0 223.6 l58.0 -8 v50.0 l-58.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M399.0 227.1 l58.0 -8 v50.0 l-58.0 8 Z" fill="#e2e5f7" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M395.0 230.6 l58.0 -8 v50.0 l-58.0 8 Z" fill="#f4f8fc" stroke="#414487" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="401.0" y="232.6" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.13"/>
+  <rect x="412.2" y="231.5" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.34"/>
+  <rect x="423.5" y="230.4" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.47"/>
+  <rect x="434.8" y="229.3" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.13"/>
+  <rect x="401.0" y="243.8" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.32"/>
+  <rect x="412.2" y="242.8" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.76"/>
+  <rect x="423.5" y="241.7" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.89"/>
+  <rect x="434.8" y="240.5" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.31"/>
+  <rect x="401.0" y="255.1" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.25"/>
+  <rect x="412.2" y="254.0" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.64"/>
+  <rect x="423.5" y="252.9" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.73"/>
+  <rect x="434.8" y="251.8" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.36"/>
+  <rect x="401.0" y="266.4" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.14"/>
+  <rect x="412.2" y="265.2" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.31"/>
+  <rect x="423.5" y="264.2" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.46"/>
+  <rect x="434.8" y="263.1" width="10.2" height="10.2" rx="1" fill="#7189ba" opacity="0.19"/>
+  <path d="M341 245H386" class="arrow"/>
+  <text x="292" y="320" class="dimension" text-anchor="middle">96 × 96 × 16</text>
+  <text x="430" y="320" class="dimension" text-anchor="middle">48 × 48 × 16</text>
+  <text x="292" y="337" class="operator" text-anchor="middle">BatchNorm2d</text>
+  <text x="292" y="352" class="detail" text-anchor="middle">→ ReLU</text>
+  <text x="430" y="337" class="operator" text-anchor="middle">MaxPool2d</text>
+  <text x="430" y="352" class="detail" text-anchor="middle">2 × 2 · stride 2</text>
+  <path d="M562.0 218.0 l58.0 -8 v50.0 l-58.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M558.0 221.5 l58.0 -8 v50.0 l-58.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M554.0 225.0 l58.0 -8 v50.0 l-58.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M550.0 228.5 l58.0 -8 v50.0 l-58.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M546.0 232.0 l58.0 -8 v50.0 l-58.0 8 Z" fill="#f4f8fc" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="552.0" y="234.0" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.13"/>
+  <rect x="563.2" y="232.9" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.34"/>
+  <rect x="574.5" y="231.8" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.47"/>
+  <rect x="585.8" y="230.7" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.13"/>
+  <rect x="552.0" y="245.2" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.32"/>
+  <rect x="563.2" y="244.2" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.76"/>
+  <rect x="574.5" y="243.1" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.89"/>
+  <rect x="585.8" y="241.9" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.31"/>
+  <rect x="552.0" y="256.5" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.25"/>
+  <rect x="563.2" y="255.4" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.64"/>
+  <rect x="574.5" y="254.3" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.73"/>
+  <rect x="585.8" y="253.2" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.36"/>
+  <rect x="552.0" y="267.8" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.14"/>
+  <rect x="563.2" y="266.6" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.31"/>
+  <rect x="574.5" y="265.6" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.46"/>
+  <rect x="585.8" y="264.4" width="10.2" height="10.2" rx="1" fill="#55a3b1" opacity="0.19"/>
+  <path d="M705.5 223.5 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M701.5 227.0 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M697.5 230.5 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M693.5 234.0 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d9eef3" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M689.5 237.5 l47.0 -8 v39.0 l-47.0 8 Z" fill="#f4f8fc" stroke="#2a788e" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="695.5" y="239.5" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.13"/>
+  <rect x="704.0" y="238.4" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.34"/>
+  <rect x="712.5" y="237.3" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.47"/>
+  <rect x="721.0" y="236.2" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.13"/>
+  <rect x="695.5" y="248.0" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.32"/>
+  <rect x="704.0" y="246.9" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.76"/>
+  <rect x="712.5" y="245.8" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.89"/>
+  <rect x="721.0" y="244.7" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.31"/>
+  <rect x="695.5" y="256.5" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.25"/>
+  <rect x="704.0" y="255.4" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.64"/>
+  <rect x="712.5" y="254.3" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.73"/>
+  <rect x="721.0" y="253.2" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.36"/>
+  <rect x="695.5" y="265.0" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.14"/>
+  <rect x="704.0" y="263.9" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.31"/>
+  <rect x="712.5" y="262.8" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.46"/>
+  <rect x="721.0" y="261.7" width="7.5" height="7.5" rx="1" fill="#55a3b1" opacity="0.19"/>
+  <path d="M630 245H675" class="arrow"/>
+  <text x="581" y="320" class="dimension" text-anchor="middle">48 × 48 × 32</text>
+  <text x="719" y="320" class="dimension" text-anchor="middle">24 × 24 × 32</text>
+  <text x="581" y="337" class="operator" text-anchor="middle">BatchNorm2d</text>
+  <text x="581" y="352" class="detail" text-anchor="middle">→ ReLU</text>
+  <text x="719" y="337" class="operator" text-anchor="middle">MaxPool2d</text>
+  <text x="719" y="352" class="detail" text-anchor="middle">2 × 2 · stride 2</text>
+  <path d="M860.5 221.4 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M856.5 224.9 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M852.5 228.4 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M848.5 231.9 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M844.5 235.4 l47.0 -8 v39.0 l-47.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M840.5 238.9 l47.0 -8 v39.0 l-47.0 8 Z" fill="#f4f8fc" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="846.5" y="240.9" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.13"/>
+  <rect x="855.0" y="239.8" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.34"/>
+  <rect x="863.5" y="238.7" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.47"/>
+  <rect x="872.0" y="237.6" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.13"/>
+  <rect x="846.5" y="249.4" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.32"/>
+  <rect x="855.0" y="248.3" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.76"/>
+  <rect x="863.5" y="247.2" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.89"/>
+  <rect x="872.0" y="246.1" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.31"/>
+  <rect x="846.5" y="257.9" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.25"/>
+  <rect x="855.0" y="256.8" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.64"/>
+  <rect x="863.5" y="255.7" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.73"/>
+  <rect x="872.0" y="254.6" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.36"/>
+  <rect x="846.5" y="266.4" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.14"/>
+  <rect x="855.0" y="265.3" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.31"/>
+  <rect x="863.5" y="264.2" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.46"/>
+  <rect x="872.0" y="263.1" width="7.5" height="7.5" rx="1" fill="#35a889" opacity="0.19"/>
+  <path d="M1003.5 226.4 l37.0 -8 v29.0 l-37.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M999.5 229.9 l37.0 -8 v29.0 l-37.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M995.5 233.4 l37.0 -8 v29.0 l-37.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M991.5 236.9 l37.0 -8 v29.0 l-37.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M987.5 240.4 l37.0 -8 v29.0 l-37.0 8 Z" fill="#d5eee7" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M983.5 243.9 l37.0 -8 v29.0 l-37.0 8 Z" fill="#f4f8fc" stroke="#178970" stroke-width="1.25" stroke-linejoin="round"/>
+  <rect x="989.5" y="245.9" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.13"/>
+  <rect x="995.5" y="244.8" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.34"/>
+  <rect x="1001.5" y="243.7" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.47"/>
+  <rect x="1007.5" y="242.6" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.13"/>
+  <rect x="989.5" y="251.9" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.32"/>
+  <rect x="995.5" y="250.8" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.76"/>
+  <rect x="1001.5" y="249.7" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.89"/>
+  <rect x="1007.5" y="248.6" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.31"/>
+  <rect x="989.5" y="257.9" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.25"/>
+  <rect x="995.5" y="256.8" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.64"/>
+  <rect x="1001.5" y="255.7" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.73"/>
+  <rect x="1007.5" y="254.6" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.36"/>
+  <rect x="989.5" y="263.9" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.14"/>
+  <rect x="995.5" y="262.8" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.31"/>
+  <rect x="1001.5" y="261.7" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.46"/>
+  <rect x="1007.5" y="260.6" width="5.0" height="5.0" rx="1" fill="#35a889" opacity="0.19"/>
+  <path d="M919 245H964" class="arrow"/>
+  <text x="870" y="320" class="dimension" text-anchor="middle">24 × 24 × 64</text>
+  <text x="1008" y="320" class="dimension" text-anchor="middle">12 × 12 × 64</text>
+  <text x="870" y="337" class="operator" text-anchor="middle">BatchNorm2d</text>
+  <text x="870" y="352" class="detail" text-anchor="middle">→ ReLU</text>
+  <text x="1008" y="337" class="operator" text-anchor="middle">MaxPool2d</text>
+  <text x="1008" y="352" class="detail" text-anchor="middle">2 × 2 · stride 2</text>
+  <rect x="1134" y="222" width="14" height="14" rx="2" fill="#278970" opacity="0.33"/>
+  <rect x="1150" y="222" width="14" height="14" rx="2" fill="#278970" opacity="0.52"/>
+  <rect x="1166" y="222" width="14" height="14" rx="2" fill="#278970" opacity="0.78"/>
+  <rect x="1134" y="238" width="14" height="14" rx="2" fill="#278970" opacity="0.78"/>
+  <rect x="1150" y="238" width="14" height="14" rx="2" fill="#278970" opacity="0.33"/>
+  <rect x="1166" y="238" width="14" height="14" rx="2" fill="#278970" opacity="0.52"/>
+  <rect x="1134" y="254" width="14" height="14" rx="2" fill="#278970" opacity="0.52"/>
+  <rect x="1150" y="254" width="14" height="14" rx="2" fill="#278970" opacity="0.78"/>
+  <rect x="1166" y="254" width="14" height="14" rx="2" fill="#278970" opacity="0.33"/>
+  <path d="M1185 245H1238" class="arrow"/>
+  <path d="M1266 218 1362 211" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 218 1362 228" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 218 1362 245" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 218 1362 262" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 218 1362 279" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 236 1362 211" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 236 1362 228" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 236 1362 245" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 236 1362 262" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 236 1362 279" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 254 1362 211" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 254 1362 228" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 254 1362 245" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 254 1362 262" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 254 1362 279" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 272 1362 211" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 272 1362 228" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 272 1362 245" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 272 1362 262" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1266 272 1362 279" stroke="#599f71" stroke-opacity=".29" stroke-width="1"/>
+  <path d="M1374 211 1461 245" stroke="#599f71" stroke-opacity=".4" stroke-width="1"/>
+  <path d="M1374 228 1461 245" stroke="#599f71" stroke-opacity=".4" stroke-width="1"/>
+  <path d="M1374 245 1461 245" stroke="#599f71" stroke-opacity=".4" stroke-width="1"/>
+  <path d="M1374 262 1461 245" stroke="#599f71" stroke-opacity=".4" stroke-width="1"/>
+  <path d="M1374 279 1461 245" stroke="#599f71" stroke-opacity=".4" stroke-width="1"/>
+  <circle cx="1261" cy="218" r="5" fill="#d9efdf" stroke="#4c9463"/>
+  <circle cx="1261" cy="236" r="5" fill="#d9efdf" stroke="#4c9463"/>
+  <circle cx="1261" cy="254" r="5" fill="#d9efdf" stroke="#4c9463"/>
+  <circle cx="1261" cy="272" r="5" fill="#d9efdf" stroke="#4c9463"/>
+  <circle cx="1368" cy="211" r="6" fill="#b5db9f" stroke="#4c9463"/>
+  <circle cx="1368" cy="228" r="6" fill="#b5db9f" stroke="#4c9463"/>
+  <circle cx="1368" cy="245" r="6" fill="#b5db9f" stroke="#4c9463"/>
+  <circle cx="1368" cy="262" r="6" fill="#b5db9f" stroke="#4c9463"/>
+  <circle cx="1368" cy="279" r="6" fill="#b5db9f" stroke="#4c9463"/>
+  <circle cx="1470" cy="245" r="8" fill="#74c65f" stroke="#39834a" stroke-width="1.2"/>
+  <text x="1157" y="320" class="dimension" text-anchor="middle">3 × 3 × 64</text>
+  <text x="1157" y="342" class="operator" text-anchor="middle">AdaptiveAvgPool2d</text>
+  <text x="1261" y="320" class="dimension" text-anchor="middle">576 hodnôt</text>
+  <text x="1261" y="342" class="detail" text-anchor="middle">Flatten</text>
+  <text x="1368" y="320" class="dimension" text-anchor="middle">96 neurónov</text>
+  <text x="1368" y="342" class="detail" text-anchor="middle">ReLU + Dropout</text>
+  <text x="1470" y="320" class="dimension" text-anchor="middle">1 hodnota</text>
+  <text x="1470" y="342" class="detail" text-anchor="middle">Linear</text>
+  <circle cx="1627" cy="245" r="36" fill="#fde725" stroke="#c3aa13" stroke-width="1.5"/>
+  <text x="1627" y="252" font-size="19" font-weight="700" text-anchor="middle">kcal</text>
+  <text x="1627" y="320" class="dimension" text-anchor="middle">1 odhad</text>
+  <text x="1627" y="342" class="detail" text-anchor="middle">Energia jedla</text>
+  <path d="M48 388H1712" stroke="#dde5ed"/>
+  <text x="48" y="414" class="note-label">Poradie v bloku</text>
+  <text x="179" y="414" class="note">Conv2d → BatchNorm2d → ReLU → MaxPool2d</text>
+  <text x="48" y="437" class="note-label">Regresná hlava</text>
+  <text x="179" y="437" class="note">AdaptiveAvgPool2d → Flatten → Linear → ReLU → Dropout (p = 0.25) → Linear</text>
+  <g aria-label="Vysvetlivky">
+    <path d="M846 402V447" stroke="#dde5ed"/>
+    <text x="879" y="407" class="note-label">Stride</text>
+    <text x="1003" y="407" class="note">Posun okna po vstupe. Stride 1 znamená posun o jeden pixel.</text>
+    <text x="879" y="426" class="note-label">Pad (padding)</text>
+    <text x="1003" y="426" class="note">Pridáva nuly okolo vstupu. Pad 1 pridá jeden pixel na každý okraj.</text>
+    <text x="879" y="445" class="note-label">BatchNorm2d</text>
+    <text x="1003" y="445" class="note">Pri tréningu normalizuje každý kanál podľa priemeru a rozptylu v dávke.</text>
+  </g>
+</svg>
